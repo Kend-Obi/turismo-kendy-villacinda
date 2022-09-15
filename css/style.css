@@ -1,0 +1,753 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(255, 255, 255);
+}
+
+/* INICIO HEADER */
+header {
+    width: 100%;
+    height: 64px;
+}
+
+/* Contenedor logo y menú de navegación */
+.wrapper {
+    width: 72%;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.contenedor-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+/* Menú de navegación */
+.menu-navegacion ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu-navegacion ul li {
+    margin-left: 8px;
+    padding-left: 8px;
+}
+
+.menu-navegacion ul li a {
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+    padding-bottom: 4px;
+    border-bottom: 4px solid transparent;
+}
+
+nav ul li a:hover {
+    border-color: rgb(15, 58, 75);
+    transition: .2s ease-in border-color;
+}
+/* FINAL HEADER */
+
+/* INICIO MAIN */
+main {
+    background: rgb(243, 243, 243);
+    padding-bottom: 72px;
+}
+
+/* Banner principal */
+.banner-principal {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 512px;
+    padding-bottom: 72px;
+    background:
+        linear-gradient( transparent 25%, rgb(20, 22, 48)),
+        url(../assets/buenos-aires.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-principal h1 {
+    padding-right: 35%;
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/* Sección principal */
+section, section.wrapper {
+    margin-top: 72px;
+}
+.subtitulo-seccion-principal {
+    align-self: flex-start;
+}
+
+.subtitulo {
+    width: 336px;
+    font-size: 34px;
+    font-weight: 400;
+    margin-right: 16px;
+}
+
+.parrafo-seccion-principal p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 32px;
+}
+
+.button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border-radius: 24px;
+    border-style: none;
+    padding: 12px 88px;
+    text-decoration: none;    
+}
+
+.button:hover , .button-card:hover {
+    background-color: rgb(11, 98, 133);
+    transition: .3s ease-in-out;
+}
+
+/* Sección eventos destacados */
+.seccion-eventos {
+    background: #333;
+    padding: 72px 0;
+}
+
+.seccion-eventos .subtitulo {
+    color: white;
+}
+.nav-eventos {
+    justify-content: start;
+    list-style: none;
+    margin: 16px 0;
+}
+.nav-eventos li {
+    margin-right: 1em;
+}
+
+.nav-eventos li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+.nav-eventos li a:hover {
+    color: rgb(126, 142, 148);
+    font-weight: 900;
+}
+
+/* Card sección eventos destacados */
+.new-cards {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+}
+
+.card {
+    grid-column: span 3;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 0 16px 16px 16px;
+    overflow: hidden;
+}
+
+.card img {
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    display: block;
+}
+
+.card h3 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(136, 136, 136);
+}
+
+.fa-calendar {
+    font-size: 13.7px;
+}
+.fa-location-dot {
+    font-size: 16px;
+}
+
+.card p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+hr {
+    width: 56px;
+    border: 1px solid black;
+}
+
+.button-card {
+    background-color: black;
+    color: #fff;
+    padding: 8px 20px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    border-style: none;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.favorito {
+    padding: 8px;
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+}
+
+.favorito i {
+    font-size: 16px;
+}
+
+/* Sección actividades favoritas */
+.sub2 {
+    width: initial;
+    margin-bottom: 24px;
+}
+
+.contenedor-articulo {
+    flex-wrap: wrap;
+}
+
+.contenedor-articulo img {
+    
+    align-self: flex-start;
+    width: 72px;
+    height: 72px;
+}
+
+.articulo-buscar {
+    width: 248px;
+    margin-left: 16px;
+}
+
+.articulo-buscar h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/* Inputs buscar actividades favoritas */
+.seccion-buscar {
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.seccion-buscar label {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.contenedor-selector {
+    width: 336px;
+}
+
+.selector {
+    width: 336px;
+    height: 43px;
+    padding: 8px 24px;
+    background: none;
+    color: rgb(15, 58, 75);
+    border-color: rgb(15, 58, 75);
+    border-radius: 5px;
+}
+
+.seccion-buscar .buttom-margin {
+    width: 336px;
+    align-self: flex-end;
+    text-align: center;
+}
+/* FINAL MAIN */
+
+/* INICIO FOOTER */
+footer {
+    background-color: gray;
+}
+
+.alinear-footer {
+    align-items: flex-start;
+}
+
+.logo-foot img {
+    display: block;
+}
+
+.margin-form-footer {
+    margin-top: 16px;
+}
+
+.info-foot article {
+    width: 160px;
+    margin-left: 16px;
+}
+
+.info-foot h2 {
+    font-size: 14px;
+    font-weight: 500;
+    width: 150px;
+    margin-bottom: 19px;
+    color: #fff;
+}
+
+.info-foot li {
+    list-style: none;
+}
+
+.info-foot a {
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+    line-height: 20px;
+    color: #fff;
+}
+
+.fa-twitter {
+    font-size: 10.5px;
+}
+
+.fa-facebook {
+    font-size: 10.5px;
+}
+
+footer p {
+    height: 48px;
+    text-align: center;
+    margin-top: 72px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 16px;
+}
+/* FINAL FOOTER */
+
+/* PÁGINA CATEGORIAS */
+.filtro-categorias {
+    margin-top: 72px;
+}
+
+.filtro-categorias .selector {
+    width: 248px;
+    margin-right: 12px;
+}
+
+.categorias-populares .card {
+    background-color: rgb(1, 94, 100);
+    text-align: center;
+    color: white;
+}
+
+.categorias-populares .card h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* PÁGINA EXPERIENCIAS */
+.cards-imagen-fondo {
+    grid-column: span 4;
+    background: transparent;
+    padding: 240px 16px 32px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.cards-imagen-fondo img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+/* PÁGINA NOVEDADES */
+.colum2 {
+    grid-column: span 6;
+}
+
+/* PÁGINA CONTACTO */
+.contacto {
+    background-image: url("../assets/contacto.jpg");
+    background-size: cover;
+    color: white;
+    padding: 36px 0;
+}
+
+.contacto-formulario {
+    grid-column: 1/7;
+}
+
+.contacto-formulario input,
+textarea {
+    width: 100%;
+    margin-top: 16px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(235, 235, 235);
+    font-size: 16px;
+    resize: none;
+}
+
+.contacto-formulario .button-card {
+    margin-top: 14px;
+}
+
+.contacto-datos {
+    grid-column: 8/13;
+    padding-left: 88px;
+    border-left: 1px solid black;
+}
+
+.contacto-datos article {
+    margin-bottom: 24px;
+}
+
+.contacto-datos li {
+    list-style: none;
+}
+
+.contacto-mapita {
+    width: 100%;
+    height: 352px;
+}
+
+/* Media Queries 1200px */
+@media only screen and (max-width: 1200px) {
+
+    .banner-principal h1 {
+        padding-right: 25%;
+    }
+
+    /* Contenedor Cards */
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .card h4 {
+        font-size: 12px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .button-card {
+        font-size: 12px;
+    }
+
+    .favorito {
+        width: 30px;
+        height: 30px;
+    }
+    .favorito i {
+        font-size: 14px;
+    }
+
+    /* Actividades favoritas */
+
+    .contenedor-articulo {
+        width: 30%;
+    }
+
+    .contenedor-articulo img {
+        margin: 0 auto;
+    }
+
+    .articulo-buscar {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedor-selector {
+        width: 30%;
+    }
+
+    .selector {
+        width: 100%;
+    }
+
+    .seccion-buscar .buttom-margin {
+        width: 30%;
+        padding: 12px 0;
+    }
+
+    /* Footer */
+
+    .logo-foot {
+        width: 250px;
+    }
+}
+
+/* Media Queries 1024px */
+@media screen and (max-width: 1024px) {
+
+    /* Seccion principal */
+
+    .banner-principal h1 {
+        padding-right: 8%;
+    }
+
+    .contenedor-subtitulo {
+        flex-direction: column;
+    }
+
+    .contenedor-subtitulo .subtitulo {
+        margin-bottom: 24px;
+    }
+    
+    .parrafo-seccion-principal p {
+        font-size: 16px;
+    }
+
+    /* Seccion eventos */
+
+    .card {
+        grid-column: span 6;
+    }
+
+    /* Footer */
+
+    
+    .info-foot {
+        margin-left: 16px;
+    }
+
+    /* Pagina categorias */
+
+    .filtro-categorias .selector {
+        width: 30%;
+    }
+
+    /* Página contacto */
+
+    .contacto-formulario {
+        grid-column: 1/6;
+    }
+
+    .contacto-formulario p {
+        font-size: 14px;
+    }
+    .contacto-datos {
+        grid-column: 7/13;
+    }
+}
+
+/* Media Queries 1768px */
+@media screen and (max-width: 768px) {
+
+    /* Seccion principal */
+
+    .subtitulo {
+        font-size: 30px;
+    }
+
+    /* Actividades favoritas  */
+
+    .contenedor-articulo img {
+        width: 50px;
+        height: 50px;
+    }
+    .articulo-buscar h3 {
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .articulo-buscar p {
+        font-size: 14px;
+    }
+
+    .selector {
+        padding: 0;
+        padding-left: 8px;
+    }
+
+    /* Footer */
+
+    .alinear-footer {
+        flex-direction: column;
+    }
+
+    .logo-foot {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .logo-foot img {
+        width: 90px;
+        height: 47px;
+    }
+
+    .logo-foot form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 64%;
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    .logo-foot  label{
+        margin-bottom: 0;
+    }
+
+    .logo-foot .selector {
+        width: 70%;
+        align-self: flex-end;
+    }
+
+    .info-foot {
+       margin-left: 0;
+       width: 100%;
+       margin-top: 24px;
+    }
+
+    .info-foot article {
+
+        margin-left: 0;
+    }
+
+    /* Contacto */
+
+    .contacto-formulario {
+        grid-column: 1/-1;
+    }
+
+    .contacto-datos {
+        grid-column: 1/-1;
+        border-left: none;
+        padding-top: 44px;
+        padding-left: 0;
+        border-top: 1px solid black;
+        margin-top: 44px;
+    }
+
+}
+
+/* Media Queries 480px */
+@media screen and (max-width: 480px) {
+
+    /* Wrapper */
+    .wrapper {
+        width: 90%;
+    }
+
+    /* Header */
+
+    header {
+        height: auto;
+        padding: 16px 0;
+    }
+
+    header .contenedor-flex {
+        flex-direction: column;
+    }
+
+    .menu-navegacion {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .menu-navegacion ul {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .menu-navegacion ul li {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .menu-navegacion ul li a {
+        text-decoration: none;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    /* Seccion principal */
+
+    .banner-principal h1 {
+        font-size: 36px;
+        padding-right: 0;
+    }
+
+    /* Seccion cards */
+
+    .subtitulo {
+        font-size: 24px;
+    }
+
+    .card {
+        grid-column: 1/-1;
+    }
+
+    .articulos {
+        flex-direction: column;
+    }
+
+    .contenedor-articulo {
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .articulo-buscar {
+        width: 80%;
+        text-align: start;
+    }
+
+    .seccion-buscar {
+        flex-direction: column;
+    }
+
+    .contenedor-selector {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .seccion-buscar .buttom-margin {
+        width: 100%;
+    }
+    
+    /* Footer */
+
+    .info-foot article {
+        width: 30%;
+    }
+    .info-foot h2 {
+        font-size: 12px;
+        margin-bottom:8px;
+        font-weight: 900;
+    }
+
+    /* Categorias */
+
+    .filtro-categorias .selector {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}

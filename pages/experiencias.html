@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<!-- Google Font Roboto -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Experiencias</title>
+</head>
+<body>
+	<!-- INICIO HEADER - SECCIÓN EXPERIENCIAS -->
+	<header>
+		<div class="wrapper contenedor-flex">
+			<img class="nav-logotipo" src="../assets/logo.png" alt="Turismo Logo">
+			<nav class="menu-navegacion">
+				<ul>
+					<li><a href="../index.html">Inicio</a></li>
+					<li><a href="../pages/categorias.html">Categorías</a></li>
+					<li><a href="../pages/experiencias.html">Experiencias</a></li>
+					<li><a href="../pages/novedades.html">Novedades</a></li>
+					<li><a href="../pages/contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- FINAL HEADER - SECCIÓN EXPERIENCIAS -->
+	<!-- INICIO MAIN - SECCIÓN EXPERIENCIAS -->
+	<main>
+		<div class="banner-principal">
+			<div class="wrapper">
+				<h1>Viví las mejores experiencias en Argentina</h1>
+			</div>
+		</div>
+		<div class="wrapper">
+			<form class="filtro-categorias">
+				<select class="selector" name="lugar" id="lugar">
+					<option hidden>Seleccionar lugar</option>
+					<option value="buenos-aires">Buenos Aires</option>
+					<option value="mendoza">Mendoza</option>
+					<option value="cordoba">Córdoba</option>
+				</select>
+				<select class="selector" name="fecha" id="fecha">
+					<option hidden>Seleccionar fecha</option>
+					<option value="hoy">Hoy</option>
+					<option value="semana">Esta semana</option>
+					<option value="fin-semana">Este fin de semana</option>
+				</select>
+			</form>
+			<section class="contenido-experiencias">
+				<h2 class="subtitulo sub2">¡Mirá las experiencias que tenemos para ti!</h2>
+				<div class="new-cards">
+					<article class="card  cards-imagen-fondo">
+						<img src="../assets/mendoza1.jpg" alt="imagen de evento">
+						<h3>Ceferino Namuncurá</h3>
+						<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
+						<p>Entrada libre y gratuita.</p>
+						<a href="#" class="button-card">¡Descubrir más!</a>
+					</article>
+					<article class="card cards-imagen-fondo">
+						<img src="../assets/mendoza2.jpg" alt="imagen de evento">
+						<h3>Ceferino Namuncurá</h3>
+						<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
+						<p>Entrada libre y gratuita.</p>
+						<a href="#" class="button-card">¡Descubrir más!</a>
+					</article>
+					<article class="card elemento-sinmargin  cards-imagen-fondo">
+						<img src="../assets/mendoza1.jpg" alt="imagen de evento">
+						<h3>Ceferino Namuncurá</h3>
+						<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
+						<p>Entrada libre y gratuita.</p>
+						<a href="#" class="button-card">¡Descubrir más!</a>
+					</article>
+					<article class="card cards-inferior cards-imagen-fondo">
+						<img src="../assets/mendoza2.jpg" alt="imagen de evento">
+						<h3>Ceferino Namuncurá</h3>
+						<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
+						<p>Entrada libre y gratuita.</p>
+						<a href="#" class="button-card">¡Descubrir más!</a>
+					</article>
+					<article class="card cards-imagen-fondo">
+						<img src="../assets/mendoza1.jpg" alt="imagen de evento">
+						<h3>Ceferino Namuncurá</h3>
+						<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
+						<p>Entrada libre y gratuita.</p>
+						<a href="#" class="button-card">¡Descubrir más!</a>
+					</article>
+					<article class="card elemento-sinmargin cards-imagen-fondo">
+						<img src="../assets/mendoza2.jpg" alt="imagen de evento">
+						<h3>Ceferino Namuncurá</h3>
+						<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
+						<p>Entrada libre y gratuita.</p>
+						<a href="#" class="button-card">¡Descubrir más!</a>
+					</article>
+				</div>				
+			</section>
+			<section class="categorias-populares">
+				<h2 class="subtitulo sub2">Explorá experiencias populares</h2>
+				<div class="new-cards">
+					<article class="card">
+						<img src="../assets/perito-moreno.jpg" alt="perito-moreno">
+						<h3>Aventura</h3>
+					</article>
+					<article class="card">
+						<a href="#">
+							<img src="../assets/perito-moreno.jpg" alt="turista">
+						</a>
+						<h3>Naturaleza</h3>
+					</article>
+					<article class="card">
+						<a href="#">
+							<img src="../assets/perito-moreno.jpg" alt="turista">
+						</a>
+						<h3>Vinos y gastronomía</h3>
+					</article>
+					<article class="card">
+						<a href="#">
+							<img src="../assets/perito-moreno.jpg" alt="turista">
+						</a>
+						<h3>Termas y bienestar</h3>
+					</article>
+				</div>
+			</section>
+		</div>
+	</main>
+	<!-- FINAL MAIN - SECCIÓN EXPERIENCIAS -->
+	<!-- INICIO FOOTER - SECCIÓN EXPERIENCIAS -->
+	<footer>
+		<div class="wrapper contenedor-flex alinear-footer">
+			<section class="logo-foot">
+				<img src="../assets/logo.png" alt="logo">
+				<form class="seccion-buscar margin-form-footer">
+					<label for="idioma">Idioma</label>
+					<select class="selector" name="idioma" id="idioma">
+						<option hidden>Seleccionar idioma</option>
+						<option value="ingles">Inglés</option>
+						<option value="espanol">Español</option>
+						<option value="portugues">Portugués</option>
+					</select>
+				</form>
+			</section>
+			<section class="info-foot contenedor-flex">
+					<article>
+						<h2>Nuestras redes</h2>
+						<ul>
+							<li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+							<li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+							<li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+							<li><a href="#"><i class="fa-brands fa-square-youtube"></i> Youtube</a></li>
+							<li><a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+						</ul>
+					</article>
+					<article>
+						<h2>Nuestra empresa</h2>
+						<ul>
+							<li><a href="#">Sobre nosotros</a></li>
+							<li><a href="#">Ayuda</a></li>
+							<li><a href="#">Empleo</a></li>
+							<li><a href="#">Blog y noticias</a></li>
+							<li><a href="#">Tarjeta de regalos</a></li>
+						</ul>
+					</article>
+					<article>
+						<h2>¿Necesitas asistencia?</h2>
+						<ul>
+							<li><a href="#">Contacto</a></li>
+							<li><a href="#">Ayuda</a></li>
+							<li><a href="#">Información legal</a></li>
+							<li><a href="#">Política de privacidad</a></li>
+							<li><a href="#">Términos y condiciones</a></li>
+						</ul>
+					</article>				
+			</section>
+		</div>
+		<p>© 2022 nombre de la página. TODOS LOS DERECHOS RESERVADOS.</p>
+	</footer>
+	<!-- FINAL FOOTER - SECCIÓN EXPERIENCIAS -->
+</body>
+</html>
