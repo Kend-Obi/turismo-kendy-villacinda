@@ -10,6 +10,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<!-- Framework animaciones -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="../css/style.css">
 	<title>Categorías</title>
@@ -35,7 +37,7 @@
 	<main>
 		<div class="banner-principal">
 			<div class="wrapper">
-				<h1>Viví las mejores experiencias en Argentina</h1>
+				<h1 data-aos="fade-up" data-aos-duration="3000">Viví las mejores experiencias en Argentina</h1>
 			</div>
 		</div>
 		<div class="wrapper">
@@ -152,23 +154,23 @@
 			<section class="categorias-populares">
 				<h2 class="subtitulo sub2">Explorá categorías populares</h2>
 				<div class="new-cards">
-					<article class="card">
+					<article class="card" data-aos="zoom-in" data-aos-duration="1500">
 						<img src="../assets/perito-moreno.jpg" alt="perito-moreno">
 						<h3>Deporte</h3>
 					</article>
-					<article class="card">
+					<article class="card" data-aos="zoom-in" data-aos-duration="2000">
 						<a href="#">
 							<img src="../assets/perito-moreno.jpg" alt="turista">
 						</a>
 						<h3>Pasatiempos</h3>
 					</article>
-					<article class="card">
+					<article class="card" data-aos="zoom-in" data-aos-duration="2500">
 						<a href="#">
 							<img src="../assets/perito-moreno.jpg" alt="turista">
 						</a>
 						<h3>Negocios</h3>
 					</article>
-					<article class="card">
+					<article class="card" data-aos="zoom-in" data-aos-duration="3000">
 						<a href="#">
 							<img src="../assets/perito-moreno.jpg" alt="turista">
 						</a>
@@ -230,5 +232,10 @@
 		<p>© 2022 nombre de la página. TODOS LOS DERECHOS RESERVADOS.</p>
 	</footer>
 	<!-- FINAL FOOTER - SECCIÓN CATEGORÍAS -->
+	<!-- Framework animaciones -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>
