@@ -12,6 +12,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	<!-- Framework animaciones -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="../css/style.css">
 	<title>Categorías</title>
@@ -19,219 +21,312 @@
 <body>
 	<!-- INICIO HEADER - CATEGORÍAS -->
 	<header>
-		<div class="wrapper contenedor-flex">
-			<img class="nav-logotipo" src="../assets/logo.png" alt="Turismo Logo">
-			<nav class="menu-navegacion">
-				<ul>
-					<li><a href="../index.html">Inicio</a></li>
-					<li><a href="../pages/categorias.html">Categorías</a></li>
-					<li><a href="../pages/experiencias.html">Experiencias</a></li>
-					<li><a href="../pages/novedades.html">Novedades</a></li>
-					<li><a href="../pages/contacto.html">Contacto</a></li>
+		<!-- Barra de navegación -->
+		<nav class="navbar navbar-expand-lg bg-light">
+			<div class="container">
+			  <a class="navbar-brand" href="#"><img class="nav-logotipo" src="../assets/logo.png" alt="Logotipo Turismo"></a>
+			  <!-- Menú hamburguesa - Responsive-->
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <!-- Listas barra de navegación -->
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				  <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+				  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">Categorías</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="../pages/categorias.html">Música</a></li>
+						<li><a class="dropdown-item" href="../pages/categorias.html">Teatro</a></li>
+						<li><a class="dropdown-item" href="../pages/categorias.html">Gastronomía</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item"><a class="nav-link" href="../pages/experiencias.html">Experiencias</a></li>
+				  <li class="nav-item"><a class="nav-link" href="../pages/novedades.html">Novedades</a></li>
+				  <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contácto</a></li>
+				  </li>
 				</ul>
-			</nav>
-		</div>
+			  </div>
+			</div>
+		  </nav>
 	</header>
-	<!-- FINAL HEADER - CATEGORÍAS -->
 	<!-- INICIO MAIN - SECCIÓN CATEGORÍAS -->
 	<main>
+		<!-- Banner principal -->
 		<div class="banner-principal">
-			<div class="wrapper">
-				<h1 data-aos="fade-up" data-aos-duration="3000">Viví las mejores experiencias en Argentina</h1>
+			<div class="container text-center">
+				<h1>Viví las mejores experiencias en Argentina</h1>
 			</div>
 		</div>
-		<div class="wrapper">
-			<form class="filtro-categorias">
-				<select class="selector" name="lugar" id="lugar">
-					<option hidden>Seleccionar lugar</option>
-					<option value="buenos-aires">Buenos Aires</option>
-					<option value="mendoza">Mendoza</option>
-					<option value="cordoba">Córdoba</option>
-				</select>
-				<select class="selector" name="fecha" id="fecha">
-					<option hidden>Seleccionar fecha</option>
-					<option value="hoy">Hoy</option>
-					<option value="semana">Esta semana</option>
-					<option value="fin-semana">Este fin de semana</option>
-				</select>
-				<select class="selector" name="fecha" id="fecha">
-					<option hidden>Seleccionar fecha</option>
-					<option value="hoy">Hoy</option>
-					<option value="semana">Esta semana</option>
-					<option value="fin-semana">Este fin de semana</option>
-				</select>
-			</form>
-			<section class="eventos-populares">
-				<h2 class="subtitulo sub2">Eventos de música populares</h2>
-				<div class="new-cards">
-					<article class="card">
-						<img src="../assets/perito-moreno.jpg" alt="imagen de evento">
-						<h3>Ceferino Namuncurá</h3>
-						<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
-						<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
-						<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
-						<hr>
-						<p>Entrada libre y gratuita.</p>
-						<a href="#" class="button-card">¡Descubrir más!</a>
-					</article>
-					<article class="card">
-						<img src="../assets/perito-moreno.jpg" alt="imagen de evento">
-						<h3>Ceferino Namuncurá</h3>
-						<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
-						<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
-						<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
-						<hr>
-						<p>Entrada libre y gratuita.</p>
-						<a href="#" class="button-card">¡Descubrir más!</a>
-					</article>
-					<article class="card">
-						<img src="../assets/perito-moreno.jpg" alt="imagen de evento">
-						<h3>Ceferino Namuncurá</h3>
-						<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
-						<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
-						<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
-						<hr>
-						<p>Entrada libre y gratuita.</p>
-						<a href="#" class="button-card">¡Descubrir más!</a>
-					</article>
-					<article class="card">
-						<img src="../assets/perito-moreno.jpg" alt="imagen de evento">
-						<h3>Ceferino Namuncurá</h3>
-						<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
-						<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
-						<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
-						<hr>
-						<p>Entrada libre y gratuita.</p>
-						<a href="#" class="button-card">¡Descubrir más!</a>
-					</article>
-				</div>				
-			</section>
-			<section class="eventos-gratis">
-				<h2 class="subtitulo sub2">Eventos gratis de música</h2>
-				<div class="new-cards">
-					<article class="card">
-						<img src="../assets/perito-moreno.jpg" alt="imagen de evento">
-						<h3>Ceferino Namuncurá</h3>
-						<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
-						<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
-						<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
-						<hr>
-						<p>Entrada libre y gratuita.</p>
-						<a href="#" class="button-card">¡Descubrir más!</a>
-					</article>
-					<article class="card">
-						<img src="../assets/perito-moreno.jpg" alt="imagen de evento">
-						<h3>Ceferino Namuncurá</h3>
-						<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
-						<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
-						<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
-						<hr>
-						<p>Entrada libre y gratuita.</p>
-						<a href="#" class="button-card">¡Descubrir más!</a>
-					</article>
-					<article class="card">
-						<img src="../assets/perito-moreno.jpg" alt="imagen de evento">
-						<h3>Ceferino Namuncurá</h3>
-						<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
-						<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
-						<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
-						<hr>
-						<p>Entrada libre y gratuita.</p>
-						<a href="#" class="button-card">¡Descubrir más!</a>
-					</article>
-					<article class="card">
-						<img src="../assets/perito-moreno.jpg" alt="imagen de evento">
-						<h3>Ceferino Namuncurá</h3>
-						<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
-						<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
-						<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
-						<hr>
-						<p>Entrada libre y gratuita.</p>
-						<a href="#" class="button-card">¡Descubrir más!</a>
-					</article>
-				</div>
-			</section>
-			<section class="categorias-populares">
-				<h2 class="subtitulo sub2">Explorá categorías populares</h2>
-				<div class="new-cards">
-					<article class="card" data-aos="zoom-in" data-aos-duration="1500">
-						<img src="../assets/perito-moreno.jpg" alt="perito-moreno">
-						<h3>Deporte</h3>
-					</article>
-					<article class="card" data-aos="zoom-in" data-aos-duration="2000">
-						<a href="#">
-							<img src="../assets/perito-moreno.jpg" alt="turista">
-						</a>
-						<h3>Pasatiempos</h3>
-					</article>
-					<article class="card" data-aos="zoom-in" data-aos-duration="2500">
-						<a href="#">
-							<img src="../assets/perito-moreno.jpg" alt="turista">
-						</a>
-						<h3>Negocios</h3>
-					</article>
-					<article class="card" data-aos="zoom-in" data-aos-duration="3000">
-						<a href="#">
-							<img src="../assets/perito-moreno.jpg" alt="turista">
-						</a>
-						<h3>Artes escénicas</h3>
-					</article>
-				</div>				
-			</section>
-		</div>
-	</main>
-	<!-- FINAL MAIN - SECCIÓN CATEGORÍAS -->
-	<!-- INICIO FOOTER - SECCIÓN CATEGORÍAS -->
-	<footer>
-		<div class="wrapper contenedor-flex alinear-footer">
-			<section class="logo-foot">
-				<img src="../assets/logo.png" alt="logo">
-				<form class="seccion-buscar margin-form-footer">
-					<label for="idioma">Idioma</label>
-					<select class="selector" name="idioma" id="idioma">
-						<option hidden>Seleccionar idioma</option>
-						<option value="ingles">Inglés</option>
-						<option value="espanol">Español</option>
-						<option value="portugues">Portugués</option>
+		<!-- Formulario de selección (filtro) -->
+		<section class="container">
+			<div class="row mt-5 pb-5">
+				<form class="col-4">
+					<select class="form-select" name="categorias" id="categorias">
+						<option hidden selected>Categorías</option>
+						<option value="recoleta">Música</option>
+						<option value="belgrano">Teatro</option>
+						<option value="tigre">Gastronomía</option>
 					</select>
 				</form>
-			</section>
-			<section class="info-foot contenedor-flex">
+				<form class="col-4">
+					<select class="form-select" name="fecha" id="fecha">
+						<option hidden>Seleccionar fecha</option>
+						<option value="hoy">Hoy</option>
+						<option value="semana">Esta semana</option>
+						<option value="fin-semana">Este fin de semana</option>
+					</select>
+				</form>
+				<form class="col-4">
+					<select class="form-select" name="Lugar" id="lugar">
+						<option hidden selected>Seleccionar lugar</option>
+						<option value="recoleta">Buenos Aires</option>
+						<option value="belgrano">Mendoza</option>
+						<option value="tigre">Córdoba</option>
+					</select>
+				</form>
+			</div>
+		</section>
+		<!-- Sección de eventos de músicas populares -->
+		<section class="container pb-5">
+			<div class="row">
+				<h2 class="mb-0">Eventos de música populares</h2>
+				<!-- Card 1 -->
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+					<article class="card">
+						<img class="card-img-top" src="../assets/perito-moreno.jpg" alt="imagen de evento">
+						<div class="card-body">
+							<h3 class="card-title">Ceferino Namuncurá</h3>
+							<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
+							<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
+							<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
+							<hr>
+							<p>Entrada libre y gratuita.</p>
+							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
+							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
+							</div>
+					</article>
+				</div>
+				<!-- Card 2 -->
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+					<article class="card">
+						<img class="card-img-top" src="../assets/perito-moreno.jpg" alt="imagen de evento">
+						<div class="card-body">
+							<h3 class="card-title">Ceferino Namuncurá</h3>
+							<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
+							<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
+							<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
+							<hr>
+							<p>Entrada libre y gratuita.</p>
+							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
+							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
+						</div>
+					</article>
+				</div>
+				<!-- Card 3 -->
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+					<article class="card">
+						<img class="card-img-top" src="../assets/perito-moreno.jpg" alt="imagen de evento">
+						<div class="card-body">
+							<h3 class="card-title">Ceferino Namuncurá</h3>
+							<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
+							<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
+							<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
+							<hr>
+							<p>Entrada libre y gratuita.</p>
+							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
+							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
+						</div>
+					</article>
+				</div>
+				<!-- Card 4 -->
+				<div class="col-sm-12 col-md-6 col-lg-3 d-lg-none d-xl-block mt-4">
+					<article class="card">
+						<img class="card-img-top" src="../assets/perito-moreno.jpg" alt="imagen de evento">
+						<div class="card-body">
+							<h3 class="card-title">Ceferino Namuncurá</h3>
+							<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
+							<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
+							<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
+							<hr>
+							<p>Entrada libre y gratuita.</p>
+							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
+							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<!-- Sección eventos gratis de música -->
+		<section class="container pb-5">
+			<div class="row">
+				<h2 class="mb-0">Eventos de música populares</h2>
+				<!-- Card 1 -->
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+					<article class="card">
+						<img class="card-img-top" src="../assets/perito-moreno.jpg" alt="imagen de evento">
+						<div class="card-body">
+							<h3 class="card-title">Ceferino Namuncurá</h3>
+							<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
+							<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
+							<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
+							<hr>
+							<p>Entrada libre y gratuita.</p>
+							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
+							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
+							</div>
+					</article>
+				</div>
+				<!-- Card 2 -->
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+					<article class="card">
+						<img class="card-img-top" src="../assets/perito-moreno.jpg" alt="imagen de evento">
+						<div class="card-body">
+							<h3 class="card-title">Ceferino Namuncurá</h3>
+							<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
+							<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
+							<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
+							<hr>
+							<p>Entrada libre y gratuita.</p>
+							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
+							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
+						</div>
+					</article>
+				</div>
+				<!-- Card 3 -->
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+					<article class="card">
+						<img class="card-img-top" src="../assets/perito-moreno.jpg" alt="imagen de evento">
+						<div class="card-body">
+							<h3 class="card-title">Ceferino Namuncurá</h3>
+							<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
+							<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
+							<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
+							<hr>
+							<p>Entrada libre y gratuita.</p>
+							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
+							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
+						</div>
+					</article>
+				</div>
+				<!-- Card 4 -->
+				<div class="col-sm-12 col-md-6 col-lg-3 d-lg-none d-xl-block mt-4">
+					<article class="card">
+						<img class="card-img-top" src="../assets/perito-moreno.jpg" alt="imagen de evento">
+						<div class="card-body">
+							<h3 class="card-title">Ceferino Namuncurá</h3>
+							<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
+							<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
+							<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
+							<hr>
+							<p>Entrada libre y gratuita.</p>
+							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
+							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<!-- Sección explorá categorías populares -->
+		<section class="container pb-5">
+			<div class="row">
+				<h2 class="mb-0">Explorá categorías populares</h2>
+				<!-- Card 1 -->
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+					<article class="card">
+						<img class="card-img-top" src="../assets/perito-moreno.jpg" alt="imagen de evento">
+						<div class="card-body text-center bg-light">
+							<h3 class="mb-0">Deportes</h3>
+							</div>
+					</article>
+				</div>
+				<!-- Card 2 -->
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+					<article class="card">
+						<img class="card-img-top" src="../assets/perito-moreno.jpg" alt="imagen de evento">
+						<div class="card-body text-center bg-light">
+							<h3 class="mb-0">Pasatiempos</h3>
+							</div>
+					</article>
+				</div>
+				<!-- Card 3 -->
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+					<article class="card">
+						<img class="card-img-top" src="../assets/perito-moreno.jpg" alt="imagen de evento">
+						<div class="card-body text-center bg-light">
+							<h3 class="mb-0">Negocios</h3>
+							</div>
+					</article>
+				</div>
+				<!-- Card 4 -->
+				<div class="col-sm-12 col-md-6 col-lg-3 d-lg-none d-xl-block mt-4">
+					<article class="card">
+						<img class="card-img-top" src="../assets/perito-moreno.jpg" alt="imagen de evento">
+						<div class="card-body text-center bg-light">
+							<h3 class="mb-0">Artes escénicas</h3>
+							</div>
+					</article>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- INICIO FOOTER - SECCIÓN CATEGORÍAS -->
+	<footer class="bg-secondary pt-5">
+		<section class="container pb-4">
+			<div class="row">
+				<!-- Logo en el footer -->
+				<div class="col-md-4">
+					<img src="../assets/logo.png" alt="Logotipo">
+					<form>
+						<div>
+							<label class="mt-4 pb-2" for="idioma">Idioma</label>
+							<select class="form-select" name="idioma" id="idioma">
+								<option hidden selected>Seleccionar idioma</option>
+								<option value="recoleta">Inglés</option>
+								<option value="belgrano">Portugués</option>
+								<option value="tigre">Chino</option>
+							</select>
+						</div>
+					</form>
+				</div>
+				<!-- Información del footer -->
+				<section class="col-md-6 d-flex ms-auto justify-content-between">
 					<article>
 						<h2>Nuestras redes</h2>
-						<ul>
-							<li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-							<li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-							<li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
-							<li><a href="#"><i class="fa-brands fa-square-youtube"></i> Youtube</a></li>
-							<li><a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+						<ul class="list-unstyled lh-lg">
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-square-youtube"></i> Youtube</a></li>
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
 						</ul>
 					</article>
 					<article>
 						<h2>Nuestra empresa</h2>
-						<ul>
-							<li><a href="#">Sobre nosotros</a></li>
-							<li><a href="#">Ayuda</a></li>
-							<li><a href="#">Empleo</a></li>
-							<li><a href="#">Blog y noticias</a></li>
-							<li><a href="#">Tarjeta de regalos</a></li>
+						<ul class="list-unstyled lh-lg">
+							<li><a class="nav-link" href="#">Sobre nosotros</a></li>
+							<li><a class="nav-link" href="#">Ayuda</a></li>
+							<li><a class="nav-link" href="#">Empleo</a></li>
+							<li><a class="nav-link" href="#">Blog y noticias</a></li>
+							<li><a class="nav-link" href="#">Tarjeta de regalos</a></li>
 						</ul>
 					</article>
 					<article>
 						<h2>¿Necesitas asistencia?</h2>
-						<ul>
-							<li><a href="#">Contacto</a></li>
-							<li><a href="#">Ayuda</a></li>
-							<li><a href="#">Información legal</a></li>
-							<li><a href="#">Política de privacidad</a></li>
-							<li><a href="#">Términos y condiciones</a></li>
+						<ul class="list-unstyled lh-lg">
+							<li><a class="nav-link" href="#">Contacto</a></li>
+							<li><a class="nav-link" href="#">Ayuda</a></li>
+							<li><a class="nav-link" href="#">Información legal</a></li>
+							<li><a class="nav-link" href="#">Política de privacidad</a></li>
+							<li><a class="nav-link" href="#">Términos y condiciones</a></li>
 						</ul>
-					</article>				
-			</section>
-		</div>
-		<p>© 2022 nombre de la página. TODOS LOS DERECHOS RESERVADOS.</p>
+					</article>
+				</section>
+			</div>
+		</section>
+		<p class="bg-dark text-light text-center m-0 p-2">© 2022 nombre de la página. TODOS LOS DERECHOS RESERVADOS.</p>
 	</footer>
-	<!-- FINAL FOOTER - SECCIÓN CATEGORÍAS -->
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 	<!-- Framework animaciones -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
