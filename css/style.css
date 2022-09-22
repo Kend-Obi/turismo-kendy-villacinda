@@ -59,3 +59,9 @@ footer li {
 footer p {
     font-size: 12px;
 }
+
+/* Sección experiencias */
+
+.card-img-overlay {
+    top: initial;
+}
