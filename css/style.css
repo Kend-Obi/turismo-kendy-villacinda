@@ -47,7 +47,6 @@ blockquote p {
 }
 
 /* Footer */
-
 footer h2 {
     font-size: 14px;
 }
@@ -60,8 +59,15 @@ footer p {
     font-size: 12px;
 }
 
-/* Sección experiencias */
-
+/* Página experiencias */
 .card-img-overlay {
     top: initial;
+}
+
+/* Página contacto */
+.contacto {
+    background-image: url("../assets/contacto.jpg");
+    background-size: cover;
+    color: white;
+    padding: 36px 0;
 }
