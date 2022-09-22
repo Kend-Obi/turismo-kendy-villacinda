@@ -27,9 +27,9 @@
 	<!-- INICIO HEADER - INDEX -->
 	<header>
 		<!-- Barra de navegación -->
-		<nav class="navbar navbar-expand-lg bg-light">
+		<nav class="navbar navbar-expand-lg">
 			<div class="container">
-			  <a class="navbar-brand" href="#"><img class="nav-logotipo" src="./assets/logo.png" alt="Logotipo Turismo"></a>
+			  <a class="navbar-brand" href="#"><img class="nav-logotipo" src="./assets/logo-travelarg-verde.svg" alt="Logotipo Turismo"></a>
 			  <!-- Menú hamburguesa - Responsive-->
 			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -53,11 +53,8 @@
 			  </div>
 			</div>
 		  </nav>
-	</header>
-	<!-- INICIO MAIN - INDEX -->
-	<main>
-		<!-- Banner principal -->
-		<div class="carousel slide" data-bs-ride="carousel">
+		  <!-- Banner principal -->
+		<div class="carousel slide banner" data-bs-ride="false">
 			<!-- Iconos indicadores -->
 			<div class="carousel-indicators">
 			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -67,7 +64,8 @@
 			<div class="carousel-inner">
 				<!-- Banner 1 -->
 			  	<div class="carousel-item active banner-gradient"  data-bs-interval="8000">
-					<img src="./assets/buenos-aires.jpg" class="d-block w-100" alt="Buenos Aires de Noche">
+					<!-- <img src="./assets/buenos-aires.jpg" class="d-block w-100" alt="Buenos Aires de Noche">  -->
+					<video src="./assets/video-banner-index.mp4" class="d-block" autoplay loop></video>
 					<div class="carousel-caption d-none d-md-block">
 					<h1 data-aos="fade-up" data-aos-duration="3000">Viví las mejores experiencias en Argentina</h1>
 					</div>
@@ -97,18 +95,19 @@
 			  <span class="visually-hidden">Next</span>
 			</button>
 		</div>
+	</header>
+	<!-- INICIO MAIN - INDEX -->
+	<main>
+		
 		<!-- Sección principal -->
 		<section class="container">
 			<div class="row mt-5">
-				<div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-					<h2 class="subtitulo">Turismo Argentina</h2>
+				<div class="col-sm-12 col-lg-4">
+					<img src=".//assets/logo-travelarg-ds.svg" class="w-100" alt="Logo Travelarg">
 				</div>
-				<article class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-							the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-							of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-							but also the leap into electronic typesetting, remaining essentially.</p>
-					<a class="col-4 btn btn-dark">¡Quiero conocer más!</a>
+				<article class="col-sm-12 col-md-12 col-lg-7 col-xl-7 ms-auto">
+					<p>Recorré Argentina, disfrutá de las mejores experiencias de nuestro país. Conocé desde nuestras Montañas de Los Andes hasta nuestros paisajes patagónicos. Además somos un país conocido por el baile y la música del tango, encontrá todos los eventos y disfrutá en Argentina.</p>
+					<a class="col-sm-12 col-lg-6 btn btn-dark d-block">¡Quiero conocer más!</a>
 				</article>
 			</div>
 		</section>
@@ -117,7 +116,7 @@
 			<section class="container">
 				<div class="row">
 					<h2 class="mt-5 mb-0">Eventos destacados</h2>
-					<ul class="nav mt-4">
+					<ul class="nav mt-1">
 						<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Todos</a></li>
 						<li><a class="nav-link" href="#">Hoy</a></li>
 						<li><a class="nav-link" href="#">Este fin de semana</a></li>
@@ -126,67 +125,59 @@
 				</div>
 			</section>
 			<!-- Sección eventos destacados cards -->
-			<section class="container pb-3">
+			<section class="container pb-3 mt-3">
 				<div class="row">
 					<!-- Card 1 -->
-					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 						<article class="card" data-aos="zoom-in" data-aos-duration="1500">
-							<img class="card-img-top" src="./assets/perito-moreno.jpg" alt="imagen de evento">
+							<img class="card-img-top" src="./assets/jardin-botanico.jpg" alt="Jardín Botánico">
 							<div class="card-body">
-								<h3 class="card-title">Ceferino Namuncurá</h3>
-								<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
-								<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
-								<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
-								<hr>
-								<p>Entrada libre y gratuita.</p>
+								<h3 class="card-title">Jardín Botánico</h3>
+								<h4><i class="fa-solid fa-calendar"></i> De martes a domingo.</h4>
+								<h4><i class="fa-solid fa-location-dot"></i> Palermo, CABA.</h4>
+								<p>Te vas a encontrar con 5 hectáreas destinadas a la flora Argentina.</p>
 								<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
 								<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 								</div>
 						</article>
 					</div>
 					<!-- Card 2 -->
-					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 						<article class="card" data-aos="zoom-in" data-aos-duration="2000">
-							<img class="card-img-top" src="./assets/perito-moreno.jpg" alt="imagen de evento">
+							<img class="card-img-top" src="./assets/caminito-la-boca.jpg" alt="Caminito, La Boca">
 							<div class="card-body">
-								<h3 class="card-title">Ceferino Namuncurá</h3>
-								<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
-								<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
-								<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
-								<hr>
-								<p>Entrada libre y gratuita.</p>
+								<h3 class="card-title">Turismo en Barrios</h3>
+								<h4><i class="fa-solid fa-calendar"></i> Todos los días</h4>
+								<h4><i class="fa-solid fa-location-dot"></i> Circuitos al aire libre.</h4>
+								<p>¡Recorré los barrios de la Ciudad y disfrutá de su gastronomía!</p>
 								<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
 								<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 							</div>
 						</article>
 					</div>
 					<!-- Card 3 -->
-					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 						<article class="card" data-aos="zoom-in" data-aos-duration="2500">
-							<img class="card-img-top" src="./assets/perito-moreno.jpg" alt="imagen de evento">
+							<img class="card-img-top" src="./assets/puerto-madero.jpg" alt="Puerto Madero">
 							<div class="card-body">
-								<h3 class="card-title">Ceferino Namuncurá</h3>
-								<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
-								<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
-								<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
-								<hr>
-								<p>Entrada libre y gratuita.</p>
+								<h3 class="card-title">Puerto Madero</h3>
+								<h4><i class="fa-solid fa-calendar"></i> Todos los días.</h4>
+								<h4><i class="fa-solid fa-location-dot"></i> Puerto Madero, CABA.</h4>
+								<p>Un barrio que conjuga arquitectura moderna y naturaleza...</p>
 								<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
 								<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 							</div>
 						</article>
 					</div>
 					<!-- Card 4 -->
-					<div class="col-sm-12 col-md-6 col-lg-3 d-lg-none d-xl-block mt-4">
+					<div class="col-sm-12 col-md-6 col-lg-3 d-lg-none d-xl-block">
 						<article class="card" data-aos="zoom-in" data-aos-duration="3000">
-							<img class="card-img-top" src="./assets/perito-moreno.jpg" alt="imagen de evento">
+							<img class="card-img-top" src="./assets/camino-historietas.jpg" alt="Camino de las historietas, Mafalda">
 							<div class="card-body">
-								<h3 class="card-title">Ceferino Namuncurá</h3>
-								<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
-								<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
-								<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
-								<hr>
-								<p>Entrada libre y gratuita.</p>
+								<h3 class="card-title">Ídolos Populares</h3>
+								<h4><i class="fa-solid fa-calendar"></i> Todos los días.</h4>
+								<h4><i class="fa-solid fa-location-dot"></i> San Telmo, CABA.</h4>
+								<p>Disfrutá de un paseo entre esculturas de artistas, historietas o héroes...</p>
 								<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
 								<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 							</div>
@@ -198,21 +189,21 @@
 		<!-- Sección actividades favoritas -->
 		<section class="container my-5">
 			<h2>Buscá tus actividades favoritas</h2>
-			<div class="row mt-4">
+			<div class="row mt-5">
 				<article class="col-sm-12 col-md-4 text-center">
-					<img src="./assets/search.png" alt="Icono buscar">
-					<h3 class="my-3">Subtítulo</h3>
-					<p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+					<img src="./assets/undraw-navigator.svg" alt="Icono buscar">
+					<h3 class="my-3">Experiencias increíbles</h3>
+					<p class="text-muted mb-0">Descubrí las mejores experiencias y explorá cada rincón de nuestra bella Argentina.</p>
 				</article>
 				<article class="col-sm-12 col-md-4 text-center">
-					<img src="./assets/heart.png" alt="Icono buscar">
-					<h3 class="my-3">Subtítulo</h3>
-					<p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+					<img src="./assets/undraw-biking.png" alt="Icono buscar">
+					<h3 class="my-3">Visitas autoguiadas</h3>
+					<p class="text-muted mb-0">Buscá lo que quieras y conocé Buenos Aires por cuenta propia o con amigos.</p>
 				</article>
 				<article class="col-sm-12 col-md-4 text-center">
-					<img src="./assets/search.png" alt="Icono buscar">
-					<h3 class="my-3">Subtítulo</h3>
-					<p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+					<img src="./assets/undraw-special-event.svg" alt="Icono buscar">
+					<h3 class="my-3">Todos los eventos en Travelarg</h3>
+					<p class="text-muted mb-0">Viví a pleno todo lo que ofrece una de las ciudades con mayor oferta cultural.</p>
 				</article>
 			</div>
 		</section>
@@ -245,66 +236,58 @@
 		<!-- Sección conocé y disfrutá Buenos Aires -->
 		<section class="container pb-5">
 			<div class="row">
-				<h2 class="mb-0">Conocé y disfrutá Buenos Aires</h2>
+				<h2 class="mb-4">Conocé y disfrutá Buenos Aires</h2>
 				<!-- Card 1 -->
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 					<article class="card" data-aos="zoom-in" data-aos-duration="1500">
-						<img class="card-img-top" src="./assets/perito-moreno.jpg" alt="imagen de evento">
+						<img class="card-img-top" src="./assets/jardin-botanico.jpg" alt="Jardín Botánico">
 						<div class="card-body">
-							<h3 class="card-title">Ceferino Namuncurá</h3>
-							<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
-							<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
-							<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
-							<hr>
-							<p>Entrada libre y gratuita.</p>
+							<h3 class="card-title">Jardín Botánico</h3>
+							<h4><i class="fa-solid fa-calendar"></i> De martes a domingo.</h4>
+							<h4><i class="fa-solid fa-location-dot"></i> Palermo, CABA.</h4>
+							<p>Te vas a encontrar con 5 hectáreas destinadas a la flora Argentina.</p>
 							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
 							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 							</div>
 					</article>
 				</div>
 				<!-- Card 2 -->
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 					<article class="card" data-aos="zoom-in" data-aos-duration="2000">
-						<img class="card-img-top" src="./assets/perito-moreno.jpg" alt="imagen de evento">
+						<img class="card-img-top" src="./assets/caminito-la-boca.jpg" alt="Caminito, La Boca">
 						<div class="card-body">
-							<h3 class="card-title">Ceferino Namuncurá</h3>
-							<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
-							<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
-							<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
-							<hr>
-							<p>Entrada libre y gratuita.</p>
+							<h3 class="card-title">Turismo en Barrios</h3>
+							<h4><i class="fa-solid fa-calendar"></i> Todos los días</h4>
+							<h4><i class="fa-solid fa-location-dot"></i> Circuitos al aire libre.</h4>
+							<p>¡Recorré los barrios de la Ciudad y disfrutá de su gastronomía!</p>
 							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
 							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 						</div>
 					</article>
 				</div>
 				<!-- Card 3 -->
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 					<article class="card" data-aos="zoom-in" data-aos-duration="2500">
-						<img class="card-img-top" src="./assets/perito-moreno.jpg" alt="imagen de evento">
+						<img class="card-img-top" src="./assets/puerto-madero.jpg" alt="Puerto Madero">
 						<div class="card-body">
-							<h3 class="card-title">Ceferino Namuncurá</h3>
-							<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
-							<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
-							<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
-							<hr>
-							<p>Entrada libre y gratuita.</p>
+							<h3 class="card-title">Puerto Madero</h3>
+							<h4><i class="fa-solid fa-calendar"></i> Todos los días.</h4>
+							<h4><i class="fa-solid fa-location-dot"></i> Puerto Madero, CABA.</h4>
+							<p>Un barrio que conjuga arquitectura moderna y naturaleza...</p>
 							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
 							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 						</div>
 					</article>
 				</div>
 				<!-- Card 4 -->
-				<div class="col-sm-12 col-md-6 col-lg-3 d-lg-none d-xl-block mt-4">
+				<div class="col-sm-12 col-md-6 col-lg-3 d-lg-none d-xl-block">
 					<article class="card" data-aos="zoom-in" data-aos-duration="3000">
-						<img class="card-img-top" src="./assets/perito-moreno.jpg" alt="imagen de evento">
+						<img class="card-img-top" src="./assets/camino-historietas.jpg" alt="Camino de las historietas, Mafalda">
 						<div class="card-body">
-							<h3 class="card-title">Ceferino Namuncurá</h3>
-							<h4><i class="fa-solid fa-calendar"></i> Sábado 27 de agosto. 10h.</h4>
-							<h4><i class="fa-solid fa-location-dot"></i> Hipólito Yrigoyen 3999.</h4>
-							<p>En el marco del aniversario del natalicio del Beato Ceferino...</p>
-							<hr>
-							<p>Entrada libre y gratuita.</p>
+							<h3 class="card-title">Ídolos Populares</h3>
+							<h4><i class="fa-solid fa-calendar"></i> Todos los días.</h4>
+							<h4><i class="fa-solid fa-location-dot"></i> San Telmo, CABA.</h4>
+							<p>Disfrutá de un paseo entre esculturas de artistas, historietas o héroes...</p>
 							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
 							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 						</div>
@@ -320,10 +303,10 @@
 					<article class="card text-center" data-aos="zoom-in" data-aos-duration="1500">
 						<figure class="py-3 px-3 mb-0">
 							<blockquote class="blockquote">
-							  <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.”</p>
+							  <p>“Me encanta todos los eventos que hay en Buenos Aires, gracias Travelarg por ayudarme a encontrarlo, son los mejores.”</p>
 							</blockquote>
 							<figcaption class="blockquote-footer mt-3 mb-0">
-							  Nombre <cite title="Source Title">Usuario de Twitter</cite>
+								@patricio <cite title="Source Title">usuario de Instagram</cite>
 							</figcaption>
 						  </figure>
 					</article>
@@ -332,10 +315,10 @@
 					<article class="card text-center" data-aos="zoom-in" data-aos-duration="2000">
 						<figure class="py-3 px-3 mb-0">
 							<blockquote class="blockquote">
-							  <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.”</p>
+							  <p>“Hice el recorrido de Alta Montañas en Mendoza, gracias a mis amigos de Travelarg por  gestionar esta experiencia.”</p>
 							</blockquote>
 							<figcaption class="blockquote-footer mt-3 mb-0">
-							  Nombre <cite title="Source Title">Usuario de Twitter</cite>
+								@fernanda <cite title="Source Title">usuaria de Twitter</cite>
 							</figcaption>
 						  </figure>
 					</article>
@@ -344,10 +327,10 @@
 					<article class="card text-center" data-aos="zoom-in" data-aos-duration="2500">
 						<figure class="py-3 px-3 mb-0">
 							<blockquote class="blockquote">
-							  <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.”</p>
+							  <p>“Son los mejores, los recomiendo al 100%. El mejor turismo los encontrarán con mis amigos de Travelarg.”</p>
 							</blockquote>
 							<figcaption class="blockquote-footer mt-3 mb-0">
-							  Nombre <cite title="Source Title">Usuario de Twitter</cite>
+								@mixwell26 <cite title="Source Title">usuario de Twitter</cite>
 							</figcaption>
 						  </figure>
 					</article>
@@ -356,10 +339,10 @@
 					<article class="card text-center" data-aos="zoom-in" data-aos-duration="3000">
 						<figure class="py-3 px-3 mb-0">
 							<blockquote class="blockquote">
-							  <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.”</p>
+							  <p>“Tenía muchas ganas de conocer Buenos Aires, me hice varias recorridos autoguiados gracias a Travelarg.”</p>
 							</blockquote>
 							<figcaption class="blockquote-footer mt-3 mb-0">
-							  Nombre <cite title="Source Title">Usuario de Twitter</cite>
+								@kenobii97 <cite title="Source Title">usuario de Instagram</cite>
 							</figcaption>
 						  </figure>
 					</article>
@@ -372,8 +355,8 @@
 		<section class="container pb-4">
 			<div class="row">
 				<!-- Logo en el footer -->
-				<div class="col-md-4">
-					<img src="./assets/logo.png" alt="Logotipo">
+				<div class="col-md-4 text-light">
+					<img src="./assets/logo-travelarg-footer.svg" alt="Logotipo Travelarg">
 					<form>
 						<div>
 							<label class="mt-4 pb-2" for="idioma">Idioma</label>
@@ -387,7 +370,7 @@
 					</form>
 				</div>
 				<!-- Información del footer -->
-				<section class="col-md-6 d-flex ms-auto justify-content-between">
+				<section class="col-md-6 d-flex ms-auto justify-content-between text-light">
 					<article>
 						<h2>Nuestras redes</h2>
 						<ul class="list-unstyled lh-lg">

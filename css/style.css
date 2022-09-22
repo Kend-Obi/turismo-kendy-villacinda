@@ -27,6 +27,7 @@ h3 {
     letter-spacing: 2px;
 }
 
+
 .banner-gradient:before {
     background-image: linear-gradient( transparent 25%, rgb(20, 22, 48));
     content: "";
