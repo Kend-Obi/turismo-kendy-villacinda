@@ -114,16 +114,18 @@ footer p {
 
 .banner-principal {
     width: 100%;
-    overflow: hidden;
-}
-
-.banner-principal img{
-    width: 100%;
-    z-index: -1;
+    height: 350px;
+    padding-bottom: 48px;
+    background:
+        linear-gradient( transparent 25%, rgb(20, 22, 48)),
+        url(../assets/buenos-aires.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .banner-principal h1 {
-    color: #055864;
+    color: #ffffff;
     font-weight: 400;
     letter-spacing: 2px;
 }
