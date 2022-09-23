@@ -25,11 +25,11 @@
 
 <body>
 	<!-- INICIO HEADER - INDEX -->
-	<header>
+	<header class="video-bg-container">
 		<!-- Barra de navegación -->
 		<nav class="navbar navbar-expand-lg">
 			<div class="container">
-			  <a class="navbar-brand" href="#"><img class="nav-logotipo" src="./assets/logo-travelarg-verde.svg" alt="Logotipo Turismo"></a>
+			  <a class="navbar-brand" href="#"><img class="nav-logotipo" src="./assets/logo-travelarg.svg" alt="Logotipo Turismo"></a>
 			  <!-- Menú hamburguesa - Responsive-->
 			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -52,71 +52,37 @@
 				</ul>
 			  </div>
 			</div>
-		  </nav>
-		  <!-- Banner principal -->
-		<div class="carousel slide banner" data-bs-ride="false">
-			<!-- Iconos indicadores -->
-			<div class="carousel-indicators">
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</nav>
+		<!-- Banner principal video -->
+		<video src="./assets/video-banner-index.mp4" class="video-bg" autoplay loop muted playsinline></video>
+		<!-- Texto banner principal video -->
+		<div class="container titulo-banner d-flex align-items-center text-light h-100">
+			<div>
+				<h1>Viví las mejores experiencias en Argentina</h1>
+				<p>Enterate y buscá los eventos que más eligen nuestros travelers.</p>
 			</div>
-			<div class="carousel-inner">
-				<!-- Banner 1 -->
-			  	<div class="carousel-item active banner-gradient"  data-bs-interval="8000">
-					<!-- <img src="./assets/buenos-aires.jpg" class="d-block w-100" alt="Buenos Aires de Noche">  -->
-					<video src="./assets/video-banner-index.mp4" class="d-block" autoplay loop></video>
-					<div class="carousel-caption d-none d-md-block">
-					<h1 data-aos="fade-up" data-aos-duration="3000">Viví las mejores experiencias en Argentina</h1>
-					</div>
-			  	</div>
-				<!-- Banner 2 -->
-			  	<div class="carousel-item banner-gradient"  data-bs-interval="3000">
-					<img src="./assets/buenos-aires.jpg" class="d-block w-100" alt="...">
-					<div class="carousel-caption d-none d-md-block">
-						<h1>Viví las mejores experiencias en Argentina</h1>
-					</div>
-			  	</div>
-				<!-- Banner 3 -->
-			  	<div class="carousel-item banner-gradient">
-					<img src="./assets/buenos-aires.jpg" class="d-block w-100" alt="...">
-					<div class="carousel-caption d-none d-md-block">
-						<h1>Viví las mejores experiencias en Argentina</h1>
-					</div>
-			  	</div>
-			</div>
-			<!-- Botones -->
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			  <span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			  <span class="visually-hidden">Next</span>
-			</button>
 		</div>
 	</header>
 	<!-- INICIO MAIN - INDEX -->
 	<main>
-		
 		<!-- Sección principal -->
 		<section class="container">
 			<div class="row mt-5">
 				<div class="col-sm-12 col-lg-4">
-					<img src=".//assets/logo-travelarg-ds.svg" class="w-100" alt="Logo Travelarg">
+					<img src="./assets/logo-travelarg-ds.svg" class="w-100" alt="Logo Travelarg">
 				</div>
 				<article class="col-sm-12 col-md-12 col-lg-7 col-xl-7 ms-auto">
-					<p>Recorré Argentina, disfrutá de las mejores experiencias de nuestro país. Conocé desde nuestras Montañas de Los Andes hasta nuestros paisajes patagónicos. Además somos un país conocido por el baile y la música del tango, encontrá todos los eventos y disfrutá en Argentina.</p>
-					<a class="col-sm-12 col-lg-6 btn btn-dark d-block">¡Quiero conocer más!</a>
+					<p class="lh-lg">Recorré Argentina, disfrutá de las mejores experiencias de nuestro país. Conocé desde nuestras Montañas de Los Andes hasta nuestros paisajes patagónicos. Además somos un país conocido por el baile y la música del tango, encontrá todos los eventos y disfrutá en Argentina.</p>
+					<a class="col-sm-12 col-lg-6 btn btn-index btn-dark d-block">¡Quiero conocer más!</a>
 				</article>
 			</div>
 		</section>
 		<!-- Sección eventos destacados -->
-		<div class="mt-5 pb-5 bg-secondary">
+		<div class="mt-5 pb-5 bg-eventos">
 			<section class="container">
 				<div class="row">
-					<h2 class="mt-5 mb-0">Eventos destacados</h2>
-					<ul class="nav mt-1">
+					<h2 class="mt-5 mb-0 text-light">Eventos destacados</h2>
+					<ul class="nav nav-eventos mt-1">
 						<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Todos</a></li>
 						<li><a class="nav-link" href="#">Hoy</a></li>
 						<li><a class="nav-link" href="#">Este fin de semana</a></li>
@@ -125,61 +91,61 @@
 				</div>
 			</section>
 			<!-- Sección eventos destacados cards -->
-			<section class="container pb-3 mt-3">
+			<section class="container pb-3">
 				<div class="row">
 					<!-- Card 1 -->
 					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-						<article class="card" data-aos="zoom-in" data-aos-duration="1500">
+						<article class="card border-0 mt-4" data-aos="zoom-in" data-aos-duration="1500">
 							<img class="card-img-top" src="./assets/jardin-botanico.jpg" alt="Jardín Botánico">
 							<div class="card-body">
 								<h3 class="card-title">Jardín Botánico</h3>
 								<h4><i class="fa-solid fa-calendar"></i> De martes a domingo.</h4>
 								<h4><i class="fa-solid fa-location-dot"></i> Palermo, CABA.</h4>
 								<p>Te vas a encontrar con 5 hectáreas destinadas a la flora Argentina.</p>
-								<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
-								<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
+								<a class="button-card btn btn-index btn-dark" href="#">¡Descubrir más!</a>
+								<a class="button-card favorito btn btn-index btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 								</div>
 						</article>
 					</div>
 					<!-- Card 2 -->
 					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-						<article class="card" data-aos="zoom-in" data-aos-duration="2000">
+						<article class="card border-0 mt-4" data-aos="zoom-in" data-aos-duration="2000">
 							<img class="card-img-top" src="./assets/caminito-la-boca.jpg" alt="Caminito, La Boca">
 							<div class="card-body">
 								<h3 class="card-title">Turismo en Barrios</h3>
 								<h4><i class="fa-solid fa-calendar"></i> Todos los días</h4>
 								<h4><i class="fa-solid fa-location-dot"></i> Circuitos al aire libre.</h4>
 								<p>¡Recorré los barrios de la Ciudad y disfrutá de su gastronomía!</p>
-								<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
-								<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
+								<a class="button-card btn btn-index btn-dark" href="#">¡Descubrir más!</a>
+								<a class="button-card favorito btn btn-index btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 							</div>
 						</article>
 					</div>
 					<!-- Card 3 -->
 					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-						<article class="card" data-aos="zoom-in" data-aos-duration="2500">
+						<article class="card border-0 mt-4" data-aos="zoom-in" data-aos-duration="2500">
 							<img class="card-img-top" src="./assets/puerto-madero.jpg" alt="Puerto Madero">
 							<div class="card-body">
 								<h3 class="card-title">Puerto Madero</h3>
 								<h4><i class="fa-solid fa-calendar"></i> Todos los días.</h4>
 								<h4><i class="fa-solid fa-location-dot"></i> Puerto Madero, CABA.</h4>
 								<p>Un barrio que conjuga arquitectura moderna y naturaleza...</p>
-								<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
-								<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
+								<a class="button-card btn btn-index btn-dark" href="#">¡Descubrir más!</a>
+								<a class="button-card favorito btn btn-index btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 							</div>
 						</article>
 					</div>
 					<!-- Card 4 -->
 					<div class="col-sm-12 col-md-6 col-lg-3 d-lg-none d-xl-block">
-						<article class="card" data-aos="zoom-in" data-aos-duration="3000">
+						<article class="card border-0 mt-4" data-aos="zoom-in" data-aos-duration="3000">
 							<img class="card-img-top" src="./assets/camino-historietas.jpg" alt="Camino de las historietas, Mafalda">
 							<div class="card-body">
 								<h3 class="card-title">Ídolos Populares</h3>
 								<h4><i class="fa-solid fa-calendar"></i> Todos los días.</h4>
 								<h4><i class="fa-solid fa-location-dot"></i> San Telmo, CABA.</h4>
 								<p>Disfrutá de un paseo entre esculturas de artistas, historietas o héroes...</p>
-								<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
-								<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
+								<a class="button-card btn btn-index btn-dark" href="#">¡Descubrir más!</a>
+								<a class="button-card favorito btn btn-index btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 							</div>
 						</article>
 					</div>
@@ -187,22 +153,22 @@
 			</section>
 		</div>
 		<!-- Sección actividades favoritas -->
-		<section class="container my-5">
-			<h2>Buscá tus actividades favoritas</h2>
-			<div class="row mt-5">
-				<article class="col-sm-12 col-md-4 text-center">
+		<section class="container mt-5">
+			<h2 class="subtitulo-color">Buscá tus actividades favoritas</h2>
+			<div class="row">
+				<article class="col-sm-12 col-md-4 text-center mt-5">
 					<img src="./assets/undraw-navigator.svg" alt="Icono buscar">
-					<h3 class="my-3">Experiencias increíbles</h3>
+					<h3 class="my-3 color-secundario">Experiencias increíbles</h3>
 					<p class="text-muted mb-0">Descubrí las mejores experiencias y explorá cada rincón de nuestra bella Argentina.</p>
 				</article>
-				<article class="col-sm-12 col-md-4 text-center">
+				<article class="col-sm-12 col-md-4 text-center mt-5">
 					<img src="./assets/undraw-biking.png" alt="Icono buscar">
-					<h3 class="my-3">Visitas autoguiadas</h3>
+					<h3 class="my-3 color-secundario">Visitas autoguiadas</h3>
 					<p class="text-muted mb-0">Buscá lo que quieras y conocé Buenos Aires por cuenta propia o con amigos.</p>
 				</article>
-				<article class="col-sm-12 col-md-4 text-center">
+				<article class="col-sm-12 col-md-4 text-center mt-5">
 					<img src="./assets/undraw-special-event.svg" alt="Icono buscar">
-					<h3 class="my-3">Todos los eventos en Travelarg</h3>
+					<h3 class="my-3 color-secundario">Todos los eventos en Travelarg</h3>
 					<p class="text-muted mb-0">Viví a pleno todo lo que ofrece una de las ciudades con mayor oferta cultural.</p>
 				</article>
 			</div>
@@ -210,7 +176,7 @@
 		<!-- Formulario de selección y búsqueda -->
 		<section class="container pb-5">
 			<form class="row">
-				<div class="col-md-4">
+				<div class="col-md-4 mt-5">
 					<label class="mb-3" for="lugar">¿A dónde vas?</label>
 					<select name="lugar" id="lugar" class="form-select">
 						<option hidden selected>Seleccionar lugar</option>
@@ -219,7 +185,7 @@
 						<option value="tigre">Tigre</option>
 					</select>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 mt-5">
 					<label class="mb-3" for="lugar">¿Qué deseas hacer?</label>
 					<select name="lugar" id="lugar" class="form-select" aria-label="Default select example">
 						<option hidden selected>Seleccionar actividad</option>
@@ -228,68 +194,68 @@
 						<option value="tigre">Exposición</option>
 					</select>
 				</div>
-				<div class="col-md-4 d-grid align-items-end">
-					<a class="btn btn-dark" href="#">Buscar ahora</a>
+				<div class="col-md-4 d-grid align-items-end mt-5">
+					<a class="btn btn-index btn-dark" href="#">Buscar ahora</a>
 				</div>
 			</form>
 		</section>
 		<!-- Sección conocé y disfrutá Buenos Aires -->
 		<section class="container pb-5">
 			<div class="row">
-				<h2 class="mb-4">Conocé y disfrutá Buenos Aires</h2>
+				<h2 class="mb-4 subtitulo-color">Conocé y disfrutá Buenos Aires</h2>
 				<!-- Card 1 -->
 				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-					<article class="card" data-aos="zoom-in" data-aos-duration="1500">
+					<article class="card  mt-4" data-aos="zoom-in" data-aos-duration="1500">
 						<img class="card-img-top" src="./assets/jardin-botanico.jpg" alt="Jardín Botánico">
 						<div class="card-body">
 							<h3 class="card-title">Jardín Botánico</h3>
 							<h4><i class="fa-solid fa-calendar"></i> De martes a domingo.</h4>
 							<h4><i class="fa-solid fa-location-dot"></i> Palermo, CABA.</h4>
 							<p>Te vas a encontrar con 5 hectáreas destinadas a la flora Argentina.</p>
-							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
-							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
+							<a class="button-card btn btn-index btn-dark" href="#">¡Descubrir más!</a>
+							<a class="button-card favorito btn btn-index btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 							</div>
 					</article>
 				</div>
 				<!-- Card 2 -->
 				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-					<article class="card" data-aos="zoom-in" data-aos-duration="2000">
+					<article class="card mt-4" data-aos="zoom-in" data-aos-duration="2000">
 						<img class="card-img-top" src="./assets/caminito-la-boca.jpg" alt="Caminito, La Boca">
 						<div class="card-body">
 							<h3 class="card-title">Turismo en Barrios</h3>
 							<h4><i class="fa-solid fa-calendar"></i> Todos los días</h4>
 							<h4><i class="fa-solid fa-location-dot"></i> Circuitos al aire libre.</h4>
 							<p>¡Recorré los barrios de la Ciudad y disfrutá de su gastronomía!</p>
-							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
-							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
+							<a class="button-card btn btn-index btn-dark" href="#">¡Descubrir más!</a>
+							<a class="button-card favorito btn btn-index btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 						</div>
 					</article>
 				</div>
 				<!-- Card 3 -->
 				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-					<article class="card" data-aos="zoom-in" data-aos-duration="2500">
+					<article class="card mt-4" data-aos="zoom-in" data-aos-duration="2500">
 						<img class="card-img-top" src="./assets/puerto-madero.jpg" alt="Puerto Madero">
 						<div class="card-body">
 							<h3 class="card-title">Puerto Madero</h3>
 							<h4><i class="fa-solid fa-calendar"></i> Todos los días.</h4>
 							<h4><i class="fa-solid fa-location-dot"></i> Puerto Madero, CABA.</h4>
 							<p>Un barrio que conjuga arquitectura moderna y naturaleza...</p>
-							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
-							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
+							<a class="button-card btn btn-index btn-dark" href="#">¡Descubrir más!</a>
+							<a class="button-card favorito btn btn-index btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 						</div>
 					</article>
 				</div>
 				<!-- Card 4 -->
 				<div class="col-sm-12 col-md-6 col-lg-3 d-lg-none d-xl-block">
-					<article class="card" data-aos="zoom-in" data-aos-duration="3000">
+					<article class="card mt-4" data-aos="zoom-in" data-aos-duration="3000">
 						<img class="card-img-top" src="./assets/camino-historietas.jpg" alt="Camino de las historietas, Mafalda">
 						<div class="card-body">
 							<h3 class="card-title">Ídolos Populares</h3>
 							<h4><i class="fa-solid fa-calendar"></i> Todos los días.</h4>
 							<h4><i class="fa-solid fa-location-dot"></i> San Telmo, CABA.</h4>
 							<p>Disfrutá de un paseo entre esculturas de artistas, historietas o héroes...</p>
-							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
-							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
+							<a class="button-card btn btn-index btn-dark" href="#">¡Descubrir más!</a>
+							<a class="button-card favorito btn btn-index btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 						</div>
 					</article>
 				</div>
@@ -298,7 +264,7 @@
 		<!-- Seccion testimonios -->
 		<section class="container mb-5 pb-3">
 			<div class="row">
-				<h2 class="mb-0">Nuestro turistas recomiendan</h2>
+				<h2 class="mb-0 subtitulo-color">Nuestro turistas recomiendan</h2>
 				<div class="col-sm-12 col-md-6 col-lg-3 mt-4">
 					<article class="card text-center" data-aos="zoom-in" data-aos-duration="1500">
 						<figure class="py-3 px-3 mb-0">
@@ -351,11 +317,11 @@
 		</section>
 	</main>
 	<!-- INICIO FOOTER - INDEX -->
-	<footer class="bg-secondary pt-5">
+	<footer>
 		<section class="container pb-4">
 			<div class="row">
 				<!-- Logo en el footer -->
-				<div class="col-md-4 text-light">
+				<div class="col-md-4 text-light pt-5">
 					<img src="./assets/logo-travelarg-footer.svg" alt="Logotipo Travelarg">
 					<form>
 						<div>
@@ -370,7 +336,7 @@
 					</form>
 				</div>
 				<!-- Información del footer -->
-				<section class="col-md-6 d-flex ms-auto justify-content-between text-light">
+				<section class="col-md-6 d-flex ms-auto justify-content-between text-light pt-5">
 					<article>
 						<h2>Nuestras redes</h2>
 						<ul class="list-unstyled lh-lg">
@@ -404,7 +370,7 @@
 				</section>
 			</div>
 		</section>
-		<p class="bg-dark text-light text-center m-0 p-2">© 2022 nombre de la página. TODOS LOS DERECHOS RESERVADOS.</p>
+		<p class="text-light text-center m-0 p-2">© 2022 nombre de la página. TODOS LOS DERECHOS RESERVADOS.</p>
 	</footer>
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
