@@ -1,0 +1,15 @@
+main {
+    .contacto {
+        background-image: url("../assets/contacto.jpg");
+        background-size: cover;
+        color: white;
+        padding: 36px 0;
+    }
+
+    .container {
+        .contacto-mapita {
+            width: 100%;
+            max-width: 450px;
+        }
+    }
+}
