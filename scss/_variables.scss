@@ -1,0 +1,17 @@
+@mixin before-after($index: initial) {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: $index;
+}
+
+%center-item {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate( -50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}

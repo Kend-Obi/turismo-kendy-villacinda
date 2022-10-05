@@ -1,3 +1,13 @@
+header.video-bg-container .video-bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -27,13 +37,6 @@ header.video-bg-container::after {
   z-index: -1;
 }
 header.video-bg-container .video-bg {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
   z-index: -2;
 }
 header .navbar-nav .nav-item .active, header .navbar-nav .nav-item > a {
@@ -111,6 +114,16 @@ main .banner-principal h1 {
   letter-spacing: 2px;
 }
 
+header.video-bg-container .video-bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
 main .container .card .card-img-overlay {
   top: initial;
 }
@@ -122,6 +135,7 @@ main .container .banner-gradient:before {
   height: 100%;
   position: absolute;
   top: 0;
+  z-index: initial;
 }
 
 main .contacto {
