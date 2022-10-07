@@ -45,6 +45,9 @@ header .navbar-nav .nav-item .active, header .navbar-nav .nav-item > a {
 header .navbar-nav .nav-item .active:hover, header .navbar-nav .nav-item > a:hover {
   color: #bcf8ec;
 }
+header .titulo-banner div h1 {
+  margin-top: 80px;
+}
 
 main h3 {
   font-size: 20px;
@@ -142,9 +145,27 @@ main .contacto {
   background-image: url("../assets/contacto.jpg");
   background-size: cover;
   color: white;
-  padding: 36px 0;
+  padding: 124px 0 36px;
 }
 main .container .contacto-mapita {
   width: 100%;
   max-width: 450px;
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar-nav {
+    background-color: rgba(0, 67, 70, 0.9);
+    border-radius: 15px;
+  }
+}
+@media only screen and (max-width: 467px) {
+  .nav-eventos {
+    font-size: 12px;
+    padding-left: 12px;
+    margin-top: 12px;
+  }
+  .nav-eventos li a {
+    padding: 0;
+    margin-right: 12px;
+  }
 }
