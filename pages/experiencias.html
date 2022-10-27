@@ -24,37 +24,39 @@
 		<!-- Barra de navegación -->
 		<nav class="navbar navbar-expand-lg bg-primario position-absolute w-100">
 			<div class="container">
-			  <a class="navbar-brand" href="#"><img class="nav-logotipo" src="../assets/logo-travelarg.svg" alt="Logotipo Turismo"></a>
-			  <!-- Menú hamburguesa - Responsive-->
-			  <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-			  <!-- Listas barra de navegación -->
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-3">
-				  <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
-				  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">Categorías</a>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="../pages/categorias.html">Música</a></li>
-						<li><a class="dropdown-item" href="../pages/categorias.html">Teatro</a></li>
-						<li><a class="dropdown-item" href="../pages/categorias.html">Gastronomía</a></li>
+				<a class="navbar-brand" href="#"><img class="nav-logotipo" src="../assets/logo-travelarg.svg" alt="Logotipo Turismo"></a>
+				<!-- Menú hamburguesa - Responsive-->
+				<button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Listas barra de navegación -->
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-3">
+						<li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+						<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">Categorías</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="../pages/categorias.html">Música</a></li>
+								<li><a class="dropdown-item" href="../pages/categorias.html">Teatro</a></li>
+								<li><a class="dropdown-item" href="../pages/categorias.html">Gastronomía</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="../pages/experiencias.html">Experiencias</a></li>
+						<li class="nav-item"><a class="nav-link" href="../pages/novedades.html">Novedades</a></li>
+						<li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
 					</ul>
-				  </li>
-				  <li class="nav-item"><a class="nav-link" href="../pages/experiencias.html">Experiencias</a></li>
-				  <li class="nav-item"><a class="nav-link" href="../pages/novedades.html">Novedades</a></li>
-				  <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
-				  </li>
-				</ul>
-			  </div>
+				</div>
 			</div>
-		  </nav>
+		</nav>
 	</header>
 	<!-- INICIO MAIN - SECCIÓN EXPERIENCIAS -->
 	<main>
 		<!-- Banner principal -->
-		<div class="banner-principal">
+		<div class="banner-principal experiencias">
 			<div class="container d-flex align-items-end h-100">
-				<div><h1>Experiencias</h1></div>
+				<div col-sm-8 col-md-4>
+					<h1>Experiencias</h1>
+					<p>En Argentina encontrás las experiencias que tanto buscás.</p>
+				</div>
 			</div>
 		</div>
 		<!-- Formulario de selección (filtro) -->
@@ -79,53 +81,53 @@
 			</div>
 		</section>
 		<!-- Sección ¡Mirá las experiencias que tenemos para ti! -->
-		<section class="container pb-5">
+		<section class="container pb-5 contenedor-experiencias">
 			<div class="row">
-				<h2 class="mb-0">¡Mirá las experiencias que tenemos para ti!</h2>
+				<h2 class="mb-0 mt-3 subtitulo-color">¡Mirá las experiencias que tenemos para ti!</h2>
 				<!-- Card 1 -->
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4" data-aos="zoom-in" data-aos-duration="1500">
 					<article class="card overflow-hidden banner-gradient">
 						<img class="card-img" src="../assets/quebrada-humahuaca.jpg" alt="Quebrada Humahuaca">
 						<div class="card-img-overlay text-light">
 							<h3 class="card-title">Quebrada de Humahuaca</h3>
-							<p>Ruta de los pueblos precolombinos, paisaje cultural del mundo.</p>
+							<p>Ruta de los pueblos precolombinos, vista del uno de paisaje cultural del mundo.</p>
 							<hr>
-							<p>3 días - 155 kilómetros</p>
-							<a class="button-card btn btn-light px-3" href="#">¡Descubrir más!</a>
-							<a class="button-card favorito btn btn-light mx-2" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+							<p>3 días - Todo Incluido</p>
+							<a class="button-card btn px-3" href="#">¡Descubrir más!</a>
+							<a class="button-card favorito btn mx-2" href="#"><i class="fa-brands fa-whatsapp"></i></a>
 						</div>
 					</article>
 				</div>
 				<!-- Card 2 -->
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4" data-aos="zoom-in" data-aos-duration="2000">
 					<article class="card overflow-hidden banner-gradient">
 						<img class="card-img" src="../assets/jujuy.jpg" alt="Pueblos de Jujuy">
 						<div class="card-img-overlay text-light">
 							<h3 class="card-title">Pueblos de Jujuy</h3>
-							<p>Ruta de los pueblos precolombinos, paisaje cultural del mundo.</p>
+							<p>Te presentamos esos pequeños pueblos llenos de historias inolvidables.</p>
 							<hr>
-							<p>3 días - 155 kilómetros</p>
-							<a class="button-card btn btn-light px-3" href="#">¡Descubrir más!</a>
-							<a class="button-card favorito btn btn-light mx-2" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+							<p>5 días - Todo Incluido</p>
+							<a class="button-card btn px-3" href="#">¡Descubrir más!</a>
+							<a class="button-card favorito btn mx-2" href="#"><i class="fa-brands fa-whatsapp"></i></a>
 							</div>
 					</article>
 				</div>
 				<!-- Card 3 -->
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4" data-aos="zoom-in" data-aos-duration="2500">
 					<article class="card overflow-hidden banner-gradient">
 						<img class="card-img" src="../assets/salinas-jujuy.jpg" alt="Salinas grandes, Jujuy">
 						<div class="card-img-overlay text-light">
 							<h3 class="card-title">Salinas Grandes</h3>
-							<p>Ruta de los pueblos precolombinos, paisaje cultural del mundo.</p>
+							<p>Son una de las salinas de mayor extensión dentro del país.</p>
 							<hr>
-							<p>3 días - 155 kilómetros</p>
-							<a class="button-card btn btn-light px-3" href="#">¡Descubrir más!</a>
-							<a class="button-card favorito btn btn-light mx-2" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+							<p>8 horas - Transporte incluido</p>
+							<a class="button-card btn px-3" href="#">¡Descubrir más!</a>
+							<a class="button-card favorito btn mx-2" href="#"><i class="fa-brands fa-whatsapp"></i></a>
 							</div>
 					</article>
 				</div>
 				<!-- Card 4 -->
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4" data-aos="zoom-in" data-aos-duration="1500">
 					<article class="card overflow-hidden banner-gradient">
 						<img class="card-img" src="../assets/mar-del-plata.jpg" alt="Mar del Plata">
 						<div class="card-img-overlay text-light">
@@ -133,87 +135,49 @@
 							<p>Ruta de los pueblos precolombinos, paisaje cultural del mundo.</p>
 							<hr>
 							<p>3 días - 155 kilómetros</p>
-							<a class="button-card btn btn-light px-3" href="#">¡Descubrir más!</a>
-							<a class="button-card favorito btn btn-light mx-2" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+							<a class="button-card btn px-3" href="#">¡Descubrir más!</a>
+							<a class="button-card favorito btn mx-2" href="#"><i class="fa-brands fa-whatsapp"></i></a>
 							</div>
 					</article>
 				</div>
 				<!-- Card 5 -->
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4" data-aos="zoom-in" data-aos-duration="2000">
 					<article class="card overflow-hidden banner-gradient">
 						<img class="card-img" src="../assets/mendoza.jpg" alt="Alta Montañas Mendoza">
 						<div class="card-img-overlay text-light">
-							<h3 class="card-title">Ruta Alta Montañas, Mendoza</h3>
-							<p>Ruta de los pueblos precolombinos, paisaje cultural del mundo.</p>
+							<h3 class="card-title">Ruta Alta Montañas - Mendoza</h3>
+							<p>Con un total de 400km, bordea el Río Mendoza, desde la zona agrícola hasta el cordón...</p>
 							<hr>
-							<p>3 días - 155 kilómetros</p>
-							<a class="button-card btn btn-light px-3" href="#">¡Descubrir más!</a>
-							<a class="button-card favorito btn btn-light mx-2" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+							<p>12 horas - Todo Incluido</p>
+							<a class="button-card btn px-3" href="#">¡Descubrir más!</a>
+							<a class="button-card favorito btn mx-2" href="#"><i class="fa-brands fa-whatsapp"></i></a>
 							</div>
 					</article>
 				</div>
 				<!-- Card 6 -->
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4" data-aos="zoom-in" data-aos-duration="2500">
 					<article class="card overflow-hidden banner-gradient">
 						<img class="card-img" src="../assets/dique-mendoza.jpg" alt="Dique Potrerillos Mendoza">
 						<div class="card-img-overlay text-light">
-							<h3 class="card-title">Dique Potrerillos, Mendoza</h3>
-							<p>Ruta de los pueblos precolombinos, paisaje cultural del mundo.</p>
+							<h3 class="card-title">Dique Potrerillos - Mendoza</h3>
+							<p>Área de vital importancia para la provincia en cuanto a lo que hace al riego artificial.</p>
 							<hr>
-							<p>3 días - 155 kilómetros</p>
-							<a class="button-card btn btn-light px-3" href="#">¡Descubrir más!</a>
-							<a class="button-card favorito btn btn-light mx-2" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+							<p>8 horas - Transporte incluido</p>
+							<a class="button-card btn px-3" href="#">¡Descubrir más!</a>
+							<a class="button-card favorito btn mx-2" href="#"><i class="fa-brands fa-whatsapp"></i></a>
 							</div>
 					</article>
 				</div>
 				<!-- Botón ver más -->
-				<div class="text-center mt-4">
-					<a class="col-6 btn btn-outline-secondary px-2" href="#">¡Descubrir más!</a>
+				<div class="text-center mt-5">
+					<a class="col-6 btn btn-ver-mas px-2" href="#">¡Descubrir más!</a>
 				</div>
 			</div>
 		</section>
-		<!-- Sección explorá experiencias populares -->
-		<section class="container pb-5">
-			<div class="row">
-				<h2 class="mb-0">Explorá experiencias populares</h2>
-				<!-- Card 1 -->
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
-					<article class="card">
-						<img class="card-img-top" src="../assets/card-aventura.jpg" alt="Aventura">
-						<div class="card-body text-center bg-light">
-							<h3 class="mb-0">Aventura</h3>
-							</div>
-					</article>
-				</div>
-				<!-- Card 2 -->
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
-					<article class="card">
-						<img class="card-img-top" src="../assets/card-naturaleza.jpg" alt="Naturaleza">
-						<div class="card-body text-center bg-light">
-							<h3 class="mb-0">Naturaleza</h3>
-							</div>
-					</article>
-				</div>
-				<!-- Card 3 -->
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
-					<article class="card">
-						<img class="card-img-top" src="../assets/card-vino.jpg" alt="Vinos">
-						<div class="card-body text-center bg-light">
-							<h3 class="mb-0">Vinos y gastronomía</h3>
-							</div>
-					</article>
-				</div>
-				<!-- Card 4 -->
-				<div class="col-sm-12 col-md-6 col-lg-3 d-lg-none d-xl-block mt-4">
-					<article class="card">
-						<img class="card-img-top" src="../assets/termas-cacheuta.jpg" alt="Termas de Cacheuta">
-						<div class="card-body text-center bg-light">
-							<h3 class="mb-0">Termas y bienestar</h3>
-							</div>
-					</article>
-				</div>
-			</div>
-		</section>	
+		<!-- Sección banner publicidad -->
+		<div class="container">
+			<a href="#"><img src="../assets/banner-publicitario-travelarg.jpg" class="w-100 mb-5" alt=""></a>
+		</div>
 	</main>
 	<!-- INICIO FOOTER - SECCIÓN EXPERIENCIAS -->
 	<footer>
@@ -226,10 +190,8 @@
 						<div>
 							<label class="mt-4 pb-2" for="idioma">Idioma</label>
 							<select class="form-select" name="idioma" id="idioma">
-								<option hidden selected>Seleccionar idioma</option>
+								<option hidden selected>Cambiar idioma</option>
 								<option value="recoleta">Inglés</option>
-								<option value="belgrano">Portugués</option>
-								<option value="tigre">Chino</option>
 							</select>
 						</div>
 					</form>
@@ -239,11 +201,11 @@
 					<article>
 						<h2>Nuestras redes</h2>
 						<ul class="list-unstyled lh-lg">
-							<li><a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-							<li><a class="nav-link" href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-							<li><a class="nav-link" href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
-							<li><a class="nav-link" href="#"><i class="fa-brands fa-square-youtube"></i> Youtube</a></li>
-							<li><a class="nav-link" href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-instagram me-1"></i> Instagram</a></li>
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-twitter me-1"></i> Twitter</a></li>
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-facebook me-1"></i> Facebook</a></li>
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-square-youtube me-1"></i> Youtube</a></li>
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-linkedin me-1"></i> LinkedIn</a></li>
 						</ul>
 					</article>
 					<article>
@@ -269,7 +231,7 @@
 				</section>
 			</div>
 		</section>
-		<p class="text-light text-center m-0 p-2">© 2022 nombre de la página. TODOS LOS DERECHOS RESERVADOS.</p>
+		<p class="text-light text-center m-0 p-2">© 2022 Travelarg. TODOS LOS DERECHOS RESERVADOS.</p>
 	</footer>
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>

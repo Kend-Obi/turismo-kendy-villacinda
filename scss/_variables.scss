@@ -1,3 +1,14 @@
+$accent-01:#F72585;
+$accent-02:#4361EE;
+$color-title:#4F5363;
+$color-blue-dark:#050C2E;
+$color-blue-dark-trans: #050C2E9D;
+$color-texto-light:#777777;
+$color-texto-dark:#333333;
+$color-blue-footer:#233485;
+$color-light:#F2F2F2;
+$color-blue-light: #A0B1FF;
+
 @mixin before-after($index: initial) {
     content: "";
     width: 100%;

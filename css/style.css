@@ -11,6 +11,10 @@ header.video-bg-container .video-bg {
 body {
   font-family: "Roboto", sans-serif;
 }
+body a {
+  text-decoration: none;
+  color: #F72585;
+}
 
 header.video-bg-container {
   overflow: hidden;
@@ -18,8 +22,8 @@ header.video-bg-container {
   position: relative;
 }
 header.video-bg-container::before {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(75%, transparent), to(rgb(0, 39, 48)));
-  background-image: linear-gradient(to top, transparent 75%, rgb(0, 39, 48));
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(75%, transparent), to(#050C2E));
+  background-image: linear-gradient(to top, transparent 75%, #050C2E);
   content: "";
   width: 100%;
   height: 100%;
@@ -28,7 +32,9 @@ header.video-bg-container::before {
   z-index: 0;
 }
 header.video-bg-container::after {
-  background: rgba(0, 67, 70, 0.7);
+  background: #050C2E;
+  -webkit-filter: opacity(0.4);
+          filter: opacity(0.4);
   content: "";
   width: 100%;
   height: 100%;
@@ -39,52 +45,97 @@ header.video-bg-container::after {
 header.video-bg-container .video-bg {
   z-index: -2;
 }
+header .navbar-nav .nav-item {
+  margin-left: 14px;
+}
 header .navbar-nav .nav-item .active, header .navbar-nav .nav-item > a {
-  color: white;
+  color: #F2F2F2;
 }
 header .navbar-nav .nav-item .active:hover, header .navbar-nav .nav-item > a:hover {
-  color: #bcf8ec;
+  color: #A0B1FF;
+}
+header .navbar-nav .nav-item .dropdown-menu {
+  background-color: #4361EE;
+  border: none;
+}
+header .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  color: #F2F2F2;
+}
+header .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: #4361EE;
+  color: #050C2E;
 }
 header .titulo-banner div h1 {
   margin-top: 80px;
 }
 
-main h3 {
-  font-size: 20px;
+main .fa-location-dot {
+  font-size: 16.337px;
 }
 main .nav-eventos a {
-  color: white;
+  color: #F2F2F2;
 }
 main .nav-eventos a:hover {
-  color: #bcf8ec;
+  color: #A0B1FF;
 }
-main .btn-index {
-  background-color: #006D77;
+main .container .btn-index {
+  color: #F2F2F2;
+}
+main .container .btn {
+  background-color: #4361EE;
   border: none;
-}
-main .btn {
   border-radius: 32px;
+}
+main .container .btn:hover {
+  background-color: #A0B1FF;
+  color: #F2F2F2;
 }
 main .bg-eventos {
   background: url("../assets/banner-secundary.jpg") center/cover no-repeat;
 }
 main .subtitulo-color {
-  color: #006D77;
+  color: #4F5363;
 }
 main .color-secundario {
+  color: #F72585;
+}
+main .container .card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+main .container .card img {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+main .container .card:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+main .container .card h3 {
+  font-size: 20px;
   color: #F72585;
 }
 main .container .card h4 {
   font-size: 14px;
   font-weight: 400;
-  color: rgb(136, 136, 136);
+  color: #777777;
 }
 main .container blockquote p {
   font-size: 14px;
 }
+main .form-select {
+  border: 1px solid #4361EE;
+  border-radius: 20px;
+  color: #777777;
+}
 
 footer {
-  background-color: #006D77;
+  background-color: #233485;
+}
+footer .form-select {
+  border-radius: 20px;
 }
 footer h2 {
   font-size: 14px;
@@ -93,28 +144,8 @@ footer li {
   font-size: 12px;
 }
 footer p {
-  background-color: #055864;
+  background-color: #050C2E;
   font-size: 12px;
-}
-
-header .bg-primario {
-  background-color: #055864;
-}
-
-main .banner-principal {
-  width: 100%;
-  height: 350px;
-  padding-bottom: 48px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), to(rgb(20, 22, 48))), url(../assets/buenos-aires.jpg);
-  background: linear-gradient(transparent 25%, rgb(20, 22, 48)), url(../assets/buenos-aires.jpg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-main .banner-principal h1 {
-  color: #ffffff;
-  font-weight: 400;
-  letter-spacing: 2px;
 }
 
 header.video-bg-container .video-bg {
@@ -127,24 +158,110 @@ header.video-bg-container .video-bg {
   min-height: 100%;
 }
 
-main .container .card .card-img-overlay {
-  top: initial;
+header .navbar {
+  position: absolute;
+  top: 0;
 }
-main .container .banner-gradient:before {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), to(rgb(20, 22, 48)));
-  background-image: linear-gradient(transparent 25%, rgb(20, 22, 48));
+header .bg-primario {
+  background-color: #4361EE;
+}
+
+main .banner-principal {
+  margin-top: 77px;
+  width: 100%;
+  height: 350px;
+  padding-bottom: 48px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .banner-principal h1 {
+  color: #F2F2F2;
+  font-weight: 400;
+}
+main .banner-principal p {
+  color: #F2F2F2;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+main .categoria {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), to(rgb(20, 22, 48))), url(../assets/banner-categorias.jpg);
+  background: linear-gradient(transparent 25%, rgb(20, 22, 48)), url(../assets/banner-categorias.jpg);
+}
+main .contenedor-categorias .card .card-body {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(5, 12, 46, 0.6156862745);
+}
+main .contenedor-categorias .card .card-body h3 {
+  color: #F2F2F2;
+}
+
+header.video-bg-container .video-bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+main .experiencias {
+  background-image: url(../assets/banner-experiencias.jpg);
+}
+main .contenedor-experiencias .card .card-img-overlay {
+  top: initial;
+  z-index: 2;
+}
+main .contenedor-experiencias .card h3 {
+  color: #F2F2F2;
+}
+main .contenedor-experiencias .card p {
+  font-weight: 300;
+}
+main .contenedor-experiencias .card a {
+  background-color: #4361EE;
+  color: #F2F2F2;
+}
+main .contenedor-experiencias .card a:hover {
+  background-color: #A0B1FF;
+}
+main .contenedor-experiencias .btn-ver-mas {
+  background-color: transparent;
+  border: 1px solid #4361EE;
+  color: #4361EE;
+}
+main .contenedor-experiencias .btn-ver-mas:hover {
+  background-color: #4361EE;
+  color: #F2F2F2;
+}
+main .contenedor-experiencias .banner-gradient:before {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), to(#050C2E));
+  background-image: linear-gradient(transparent 25%, #050C2E);
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
-  z-index: initial;
+  z-index: 1;
+}
+
+header.video-bg-container .video-bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
 }
 
 main .contacto {
   background-image: url("../assets/contacto.jpg");
   background-size: cover;
-  color: white;
+  color: #F2F2F2;
   padding: 124px 0 36px;
 }
 main .container .contacto-mapita {
@@ -152,10 +269,80 @@ main .container .contacto-mapita {
   max-width: 450px;
 }
 
+header.video-bg-container .video-bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.novedades {
+  background-image: url(../assets/banner-novedades.jpg);
+}
+
+#novedades .card .row .card-img-container {
+  overflow: hidden;
+}
+#novedades .card .row .card-img-container img {
+  max-width: 100%;
+  height: 100%;
+}
+#novedades .card-img-overlay {
+  top: initial;
+  left: initial;
+  right: initial;
+  background-color: rgba(5, 12, 46, 0.6156862745);
+  width: 100%;
+}
+#novedades .card-img-overlay .card-title, #novedades .card-img-overlay a {
+  color: #F2F2F2;
+}
+#novedades .card-img-overlay .card-title svg path, #novedades .card-img-overlay a svg path {
+  stroke: #F2F2F2;
+}
+
+header.video-bg-container .video-bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+@media only screen and (max-width: 1199px) {
+  #novedades .card .row .card-img-container img {
+    max-width: none;
+    max-height: 255px;
+  }
+  #novedades .card .row .small {
+    max-height: 90px;
+  }
+  #novedades .card .card-body .card-title {
+    font-size: 16px;
+  }
+  #novedades .card .card-body p {
+    font-size: 10px;
+  }
+  #novedades .card .card-body .card-text {
+    font-size: 12px;
+  }
+  #novedades .card .card-body a {
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 991px) {
   .navbar-nav {
-    background-color: rgba(0, 67, 70, 0.9);
+    background-color: #4361EE;
     border-radius: 15px;
+  }
+
+  #novedades .novedades-lateral {
+    display: none;
   }
 }
 @media only screen and (max-width: 467px) {

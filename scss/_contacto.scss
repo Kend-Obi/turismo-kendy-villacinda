@@ -1,8 +1,10 @@
+@use 'variables' as *;
+
 main {
     .contacto {
         background-image: url("../assets/contacto.jpg");
         background-size: cover;
-        color: white;
+        color: $color-light;
         padding: 124px 0 36px;
 
     }

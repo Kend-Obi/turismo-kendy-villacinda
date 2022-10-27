@@ -2,6 +2,10 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    a{
+        text-decoration: none;
+        color: $accent-01;
+    }
 }
 
 header {
@@ -9,14 +13,13 @@ header {
         overflow: hidden;
         height: 70vh;
         position: relative;
-
         &::before {
-            background-image: linear-gradient(to top, transparent 75%, rgb(0, 39, 48));
+            background-image: linear-gradient(to top, transparent 75%, $color-blue-dark);
             @include before-after(0)
         }
-
         &::after {
-            background: rgba(0, 67, 70, 0.7);
+            background: $color-blue-dark;
+            filter: opacity(0.4);
             @include before-after(-1)
         }
 
@@ -28,11 +31,23 @@ header {
 
     .navbar-nav {
         .nav-item {
+            margin-left: 14px;
             .active, &>a {
-                color: white;
-
+                color: $color-light;
                 &:hover{
-                    color: #bcf8ec;
+                    color: $color-blue-light;
+                }
+            }
+
+            .dropdown-menu {
+                background-color: $accent-02;
+                border: none;
+                .dropdown-item {
+                    color: $color-light;
+                    &:hover {
+                        background-color: $accent-02;
+                        color: $color-blue-dark;
+                    }
                 }
             }
         }
@@ -48,26 +63,32 @@ header {
 }
 
 main {
-
-    h3 {
-        font-size: 20px;
+    .fa-location-dot {
+        font-size: 16.337px;
     }
 
     .nav-eventos {
         a {
-            color: white;
+            color: $color-light;
             &:hover {
-                color: #bcf8ec;
+                color: $color-blue-light;
             }
         }
     }
-    .btn-index {
-        background-color: #006D77;
-        border: none;
-    }
-
-    .btn {
-        border-radius: 32px;
+    .container{
+        .btn-index {
+            color: $color-light;
+        }
+    
+        .btn {
+            background-color: $accent-02;
+            border: none;
+            border-radius: 32px;
+            &:hover {
+                background-color: $color-blue-light;
+                color: $color-light;
+            }
+        }
     }
 
     .bg-eventos {
@@ -75,19 +96,31 @@ main {
     }
 
     .subtitulo-color {
-        color: #006D77;
+        color: $color-title;
     }
 
     .color-secundario {
-        color: #F72585;
+        color: $accent-01;
     }
 
     .container {
         .card {
+            border-radius: 16px;
+            overflow: hidden;
+            img{
+                transition: transform .5s ease;
+            }
+            &:hover img {
+                transform: scale(1.1);
+            }
+            h3 {
+                font-size: 20px;
+                color: $accent-01;
+            }
             h4 {
                 font-size: 14px;
                 font-weight: 400;
-                color: rgb(136, 136, 136);
+                color: $color-texto-light;
             }
         }
 
@@ -97,10 +130,20 @@ main {
             }
         }
     }
+    
+    .form-select{
+        border: 1px solid $accent-02;
+        border-radius: 20px;
+        color: $color-texto-light;
+    }
 }
 
 footer {
-    background-color: #006D77;
+    background-color: $color-blue-footer;
+    .form-select {
+        border-radius: 20px;
+    }
+
     h2 {
         font-size: 14px;
     }
@@ -110,7 +153,7 @@ footer {
     }
     
     p {
-        background-color: #055864;
+        background-color: $color-blue-dark;
         font-size: 12px;
     }
 }

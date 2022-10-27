@@ -24,37 +24,39 @@
 		<!-- Barra de navegación -->
 		<nav class="navbar navbar-expand-lg bg-primario position-absolute w-100">
 			<div class="container">
-			  <a class="navbar-brand" href="#"><img class="nav-logotipo" src="../assets/logo-travelarg.svg" alt="Logotipo Turismo"></a>
-			  <!-- Menú hamburguesa - Responsive-->
-			  <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-			  <!-- Listas barra de navegación -->
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-3">
-				  <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
-				  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">Categorías</a>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="../pages/categorias.html">Música</a></li>
-						<li><a class="dropdown-item" href="../pages/categorias.html">Teatro</a></li>
-						<li><a class="dropdown-item" href="../pages/categorias.html">Gastronomía</a></li>
+				<a class="navbar-brand" href="#"><img class="nav-logotipo" src="../assets/logo-travelarg.svg" alt="Logotipo Turismo"></a>
+				<!-- Menú hamburguesa - Responsive-->
+				<button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Listas barra de navegación -->
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-3">
+						<li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+						<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">Categorías</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="../pages/categorias.html">Música</a></li>
+								<li><a class="dropdown-item" href="../pages/categorias.html">Teatro</a></li>
+								<li><a class="dropdown-item" href="../pages/categorias.html">Gastronomía</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="../pages/experiencias.html">Experiencias</a></li>
+						<li class="nav-item"><a class="nav-link" href="../pages/novedades.html">Novedades</a></li>
+						<li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
 					</ul>
-				  </li>
-				  <li class="nav-item"><a class="nav-link" href="../pages/experiencias.html">Experiencias</a></li>
-				  <li class="nav-item"><a class="nav-link" href="../pages/novedades.html">Novedades</a></li>
-				  <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
-				  </li>
-				</ul>
-			  </div>
+				</div>
 			</div>
 		  </nav>
 	</header>
 	<!-- INICIO MAIN - SECCIÓN CATEGORÍAS -->
 	<main>
 		<!-- Banner principal -->
-		<div class="banner-principal">
+		<div class="banner-principal categoria">
 			<div class="container d-flex align-items-end h-100">
-				<div><h1>Eventos de música</h1></div>
+				<div class="col-sm-8 col-md-6">
+					<h1>Eventos de música</h1>
+					<p>Descubrí y disfrutá de los mejores eventos de música y recitales en Buenos Aires.</p>
+				</div>
 			</div>
 		</div>
 		<!-- Formulario de selección (filtro) -->
@@ -89,16 +91,16 @@
 		<!-- Sección de eventos de músicas populares -->
 		<section class="container pb-5">
 			<div class="row">
-				<h2 class="mb-0 subtitulo-color">Eventos de música populares</h2>
+				<h2 class="mb-0 mt-3 subtitulo-color">Eventos de música populares</h2>
 				<!-- Card 1 -->
 				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 					<article class="card  mt-4" data-aos="zoom-in" data-aos-duration="1500">
-						<img class="card-img-top" src="../assets/jardin-botanico.jpg" alt="Jardín Botánico en Buenos Aires">
+						<img class="card-img-top" src="../assets/music-1-fiesta-hype.jpg" alt="Festival fiesta Hype">
 						<div class="card-body">
-							<h3 class="card-title">Jardín Botánico</h3>
-							<h4><i class="fa-solid fa-calendar"></i> De martes a domingo.</h4>
-							<h4><i class="fa-solid fa-location-dot"></i> Palermo, CABA.</h4>
-							<p>Te vas a encontrar con 5 hectáreas destinadas a la flora Argentina.</p>
+							<h3 class="card-title mb-3">¡Fiesta HYPE!</h3>
+							<h4><i class="fa-solid fa-calendar me-1"></i> 25 y 26 de octubre 2022</h4>
+							<h4><i class="fa-solid fa-location-dot me-1"></i> Honduras 5339, Palermo</h4>
+							<p>Festival: Hip hop, Trap, House, Deep House, Tech House, Dancehall...</p>
 							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
 							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 							</div>
@@ -107,12 +109,12 @@
 				<!-- Card 2 -->
 				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 					<article class="card mt-4" data-aos="zoom-in" data-aos-duration="2000">
-						<img class="card-img-top" src="../assets/caminito-la-boca.jpg" alt="Caminito, La Boca">
+						<img class="card-img-top" src="../assets/music-2-nomade.png" alt="Grupo Nómade">
 						<div class="card-body">
-							<h3 class="card-title">Turismo en Barrios</h3>
-							<h4><i class="fa-solid fa-calendar"></i> Todos los días</h4>
-							<h4><i class="fa-solid fa-location-dot"></i> Circuitos al aire libre.</h4>
-							<p>¡Recorré los barrios de la Ciudad y disfrutá de su gastronomía!</p>
+							<h3 class="card-title mb-3">Nómade</h3>
+							<h4><i class="fa-solid fa-calendar me-1"></i> 11 de noviembre 2022</h4>
+							<h4><i class="fa-solid fa-location-dot me-1"></i> Palermo 1425, CABA.</h4>
+							<p>Disfrutá de la mejor música en estado natural y sin distracciones.</p>
 							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
 							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 						</div>
@@ -121,12 +123,12 @@
 				<!-- Card 3 -->
 				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 					<article class="card mt-4" data-aos="zoom-in" data-aos-duration="2500">
-						<img class="card-img-top" src="../assets/puerto-madero.jpg" alt="Puerto Madero">
+						<img class="card-img-top" src="../assets/music-3-noche-brujas.png" alt="Fiesta: Noche de Brujas">
 						<div class="card-body">
-							<h3 class="card-title">Puerto Madero</h3>
-							<h4><i class="fa-solid fa-calendar"></i> Todos los días.</h4>
-							<h4><i class="fa-solid fa-location-dot"></i> Puerto Madero, CABA.</h4>
-							<p>Un barrio que conjuga arquitectura moderna y naturaleza...</p>
+							<h3 class="card-title mb-3">Noche de Brujas</h3>
+							<h4><i class="fa-solid fa-calendar me-1"></i> 28 y 29  de octubre 2022</h4>
+							<h4><i class="fa-solid fa-location-dot me-1"></i> Centro Salamanca.</h4>
+							<p>Llega la Noche de Brujas, festival y fiesta temática de terror y diversión.</p>
 							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
 							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 						</div>
@@ -135,12 +137,12 @@
 				<!-- Card 4 -->
 				<div class="col-sm-12 col-md-6 col-lg-3 d-lg-none d-xl-block">
 					<article class="card mt-4" data-aos="zoom-in" data-aos-duration="3000">
-						<img class="card-img-top" src="../assets/camino-historietas.jpg" alt="Camino de las historietas, Mafalda">
+						<img class="card-img-top" src="../assets/music-4-cultura-profetica.png" alt="Tour Cultura Profética">
 						<div class="card-body">
-							<h3 class="card-title">Ídolos Populares</h3>
-							<h4><i class="fa-solid fa-calendar"></i> Todos los días.</h4>
-							<h4><i class="fa-solid fa-location-dot"></i> San Telmo, CABA.</h4>
-							<p>Disfrutá de un paseo entre esculturas de artistas, historietas o héroes...</p>
+							<h3 class="card-title mb-3">Cultura Profética</h3>
+							<h4><i class="fa-solid fa-calendar me-1"></i> 27 de octubre 2022</h4>
+							<h4><i class="fa-solid fa-location-dot me-1"></i> Movistar Arena.</h4>
+							<p>Cultura Profética regresa al país con un gran show el Movistar Arena...</p>
 							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
 							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 						</div>
@@ -151,16 +153,16 @@
 		<!-- Sección eventos gratis de música -->
 		<section class="container pb-5">
 			<div class="row">
-				<h2 class="mb-0 subtitulo-color">Eventos de música populares</h2>
+				<h2 class="mb-0 mt-5 subtitulo-color">Eventos gratis de música</h2>
 				<!-- Card 1 -->
 				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 					<article class="card  mt-4" data-aos="zoom-in" data-aos-duration="1500">
-						<img class="card-img-top" src="../assets/jardin-botanico.jpg" alt="Jardín Botánico">
+						<img class="card-img-top" src="../assets/music-5-mimi-maura.png" alt="Mimi Maura Concierto">
 						<div class="card-body">
-							<h3 class="card-title">Jardín Botánico</h3>
-							<h4><i class="fa-solid fa-calendar"></i> De martes a domingo.</h4>
-							<h4><i class="fa-solid fa-location-dot"></i> Palermo, CABA.</h4>
-							<p>Te vas a encontrar con 5 hectáreas destinadas a la flora Argentina.</p>
+							<h3 class="card-title mb-3">Mimi Maura en Niceto</h3>
+							<h4><i class="fa-solid fa-calendar me-1"></i> 5 de noviembre 2022   </h4>
+							<h4><i class="fa-solid fa-location-dot me-1"></i> Niceto Club - Niceto Vega 5510</h4>
+							<p>Estamos ante un nuevo disco de Mimi Maura, una nueva etapa...</p>
 							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
 							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 							</div>
@@ -169,12 +171,12 @@
 				<!-- Card 2 -->
 				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 					<article class="card mt-4" data-aos="zoom-in" data-aos-duration="2000">
-						<img class="card-img-top" src="../assets/caminito-la-boca.jpg" alt="Caminito, La Boca">
+						<img class="card-img-top" src="../assets/music-6-coldplay.png" alt="Concierto de Coldplay">
 						<div class="card-body">
-							<h3 class="card-title">Turismo en Barrios</h3>
-							<h4><i class="fa-solid fa-calendar"></i> Todos los días</h4>
-							<h4><i class="fa-solid fa-location-dot"></i> Circuitos al aire libre.</h4>
-							<p>¡Recorré los barrios de la Ciudad y disfrutá de su gastronomía!</p>
+							<h3 class="card-title mb-3">Coldplay en Argentina</h3>
+							<h4><i class="fa-solid fa-calendar me-1"></i> 5 de noviembre 2022</h4>
+							<h4><i class="fa-solid fa-location-dot me-1"></i> Estadio River Plate</h4>
+							<p>El regreso a nuestro país después de cuatro años será en el marco...</p>
 							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
 							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 						</div>
@@ -183,12 +185,12 @@
 				<!-- Card 3 -->
 				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 					<article class="card mt-4" data-aos="zoom-in" data-aos-duration="2500">
-						<img class="card-img-top" src="../assets/puerto-madero.jpg" alt="Puerto Madero">
+						<img class="card-img-top" src="../assets/music-7-dvicio.png" alt="Concierto Dvicio">
 						<div class="card-body">
-							<h3 class="card-title">Puerto Madero</h3>
-							<h4><i class="fa-solid fa-calendar"></i> Todos los días.</h4>
-							<h4><i class="fa-solid fa-location-dot"></i> Puerto Madero, CABA.</h4>
-							<p>Un barrio que conjuga arquitectura moderna y naturaleza...</p>
+							<h3 class="card-title mb-3">Dvicio en Argentina</h3>
+							<h4><i class="fa-solid fa-calendar me-1"></i> 12 de noviembre 2022</h4>
+							<h4><i class="fa-solid fa-location-dot me-1"></i> Teatro Vorterix - Lacroze 3455.</h4>
+							<p>Dvicio, una parada en Argentina en su gira mundial “Mil veces tour”.</p>
 							<a class="button-card btn btn-dark" href="#">¡Descubrir más!</a>
 							<a class="button-card favorito btn btn-dark" href="#"><i class="fa-regular fa-heart"></i></a>
 						</div>
@@ -199,7 +201,7 @@
 					<article class="card mt-4" data-aos="zoom-in" data-aos-duration="3000">
 						<img class="card-img-top" src="../assets/camino-historietas.jpg" alt="Camino de las historietas, Mafalda">
 						<div class="card-body">
-							<h3 class="card-title">Ídolos Populares</h3>
+							<h3 class="card-title mb-3">Ídolos Populares</h3>
 							<h4><i class="fa-solid fa-calendar"></i> Todos los días.</h4>
 							<h4><i class="fa-solid fa-location-dot"></i> San Telmo, CABA.</h4>
 							<p>Disfrutá de un paseo entre esculturas de artistas, historietas o héroes...</p>
@@ -211,45 +213,63 @@
 			</div>
 		</section>
 		<!-- Sección explorá categorías populares -->
-		<section class="container pb-5">
+		<section class="container pb-5 contenedor-categorias">
 			<div class="row">
-				<h2 class="mb-0 subtitulo-color">Explorá categorías populares</h2>
+				<h2 class="mb-0 mt-5 subtitulo-color">Explorá categorías populares</h2>
 				<!-- Card 1 -->
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+				<div class="col-sm-6 col-md-4 col-lg-2 mt-4">
 					<article class="card">
-						<img class="card-img-top" src="../assets/deporte.jpg" alt="Deportes">
-						<div class="card-body text-center bg-light">
+						<img class="card-img-top" src="../assets/categoria-deporte.jpg" alt="Pelota de futbol">
+						<div class="card-body text-center">
 							<h3 class="mb-0">Deportes</h3>
-							</div>
+						</div>
 					</article>
 				</div>
 				<!-- Card 2 -->
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+				<div class="col-sm-6 col-md-4 col-lg-2 mt-4">
 					<article class="card">
-						<img class="card-img-top" src="../assets/pasatiempo.jpg" alt="Tiempo libre">
-						<div class="card-body text-center bg-light">
-							<h3 class="mb-0">Tiempo libre</h3>
+						<img class="card-img-top" src="../assets/categoria-pasatiempos.jpg" alt="Mujer haciendo Yoga">
+						<div class="card-body text-center">
+							<h3 class="mb-0">Pasatiempos</h3>
 							</div>
 					</article>
 				</div>
 				<!-- Card 3 -->
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+				<div class="col-sm-6 col-md-4 col-lg-2 mt-4">
 					<article class="card">
-						<img class="card-img-top" src="../assets/negocio.jpg" alt="Negocios">
-						<div class="card-body text-center bg-light">
+						<img class="card-img-top" src="../assets/categoria-negocios.jpg" alt="Hombre de negocios">
+						<div class="card-body text-center">
 							<h3 class="mb-0">Negocios</h3>
 							</div>
 					</article>
 				</div>
 				<!-- Card 4 -->
-				<div class="col-sm-12 col-md-6 col-lg-3 d-lg-none d-xl-block mt-4">
+				<div class="col-sm-6 col-md-4 col-lg-2 mt-4">
 					<article class="card">
-						<img class="card-img-top" src="../assets/arte.jpg" alt="Bailarina, artes escénicas">
-						<div class="card-body text-center bg-light">
-							<h3 class="mb-0">Artes escénicas</h3>
+						<img class="card-img-top" src="../assets/categoria-vinos.jpg" alt="Vinos y Gastronomía">
+						<div class="card-body text-center">
+							<h3 class="mb-0">Gastronomía</h3>
 							</div>
 					</article>
 				</div>
+				<!-- Card 5 -->
+				<div class="col-sm-6 col-md-4 col-lg-2 mt-4">
+					<article class="card">
+						<img class="card-img-top" src="../assets/categoria-arte.jpg" alt="Joven haciendo arte">
+						<div class="card-body text-center">
+							<h3 class="mb-0">Arte</h3>
+							</div>
+					</article>
+				</div>
+				<!-- Card 6 -->
+				<div class="col-sm-6 col-md-4 col-lg-2 mt-4">
+					<article class="card">
+						<img class="card-img-top" src="../assets/categoria-baile.jpg" alt="Pareja de baile">
+						<div class="card-body text-center">
+							<h3 class="mb-0">Baile</h3>
+						</div>
+					</article>
+				</div>				
 			</div>
 		</section>
 	</main>
@@ -264,10 +284,8 @@
 						<div>
 							<label class="mt-4 pb-2" for="idioma">Idioma</label>
 							<select class="form-select" name="idioma" id="idioma">
-								<option hidden selected>Seleccionar idioma</option>
+								<option hidden selected>Cambiar idioma</option>
 								<option value="recoleta">Inglés</option>
-								<option value="belgrano">Portugués</option>
-								<option value="tigre">Chino</option>
 							</select>
 						</div>
 					</form>
@@ -277,11 +295,11 @@
 					<article>
 						<h2>Nuestras redes</h2>
 						<ul class="list-unstyled lh-lg">
-							<li><a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-							<li><a class="nav-link" href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-							<li><a class="nav-link" href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
-							<li><a class="nav-link" href="#"><i class="fa-brands fa-square-youtube"></i> Youtube</a></li>
-							<li><a class="nav-link" href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-instagram me-1"></i> Instagram</a></li>
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-twitter me-1"></i> Twitter</a></li>
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-facebook me-1"></i> Facebook</a></li>
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-square-youtube me-1"></i> Youtube</a></li>
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-linkedin me-1"></i> LinkedIn</a></li>
 						</ul>
 					</article>
 					<article>
@@ -307,7 +325,7 @@
 				</section>
 			</div>
 		</section>
-		<p class="text-light text-center m-0 p-2">© 2022 nombre de la página. TODOS LOS DERECHOS RESERVADOS.</p>
+		<p class="text-light text-center m-0 p-2">© 2022 Travelarg. TODOS LOS DERECHOS RESERVADOS.</p>
 	</footer>
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>

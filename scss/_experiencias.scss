@@ -1,16 +1,44 @@
 @use 'variables' as *;
 
 main {
-    .container {
+    .experiencias {
+        background-image: url(../assets/banner-experiencias.jpg);
+    }
+
+    .contenedor-experiencias {
         .card {
             .card-img-overlay {
                 top: initial;
+                z-index: 2;
+            }
+            h3 {
+                color: $color-light;
+            }
+            p {
+                font-weight: 300;
+            }
+            a {
+                background-color: $accent-02;
+                color: $color-light;
+                &:hover {
+                    background-color: $color-blue-light;
+                }
             }
         }
-
+        
+        .btn-ver-mas {
+            background-color: transparent;
+            border: 1px solid $accent-02;
+            color: $accent-02;
+            &:hover {
+                background-color: $accent-02;
+                color: $color-light;
+            }
+        }
+        
         .banner-gradient:before {
-            background-image: linear-gradient( transparent 25%, rgb(20, 22, 48));
-            @include before-after
+            background-image: linear-gradient( transparent 25%, $color-blue-dark);
+            @include before-after(1)
         }
     }
 }

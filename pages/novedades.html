@@ -24,152 +24,274 @@
 		<!-- Barra de navegación -->
 		<nav class="navbar navbar-expand-lg bg-primario position-absolute w-100">
 			<div class="container">
-			  <a class="navbar-brand" href="#"><img class="nav-logotipo" src="../assets/logo-travelarg.svg" alt="Logotipo Turismo"></a>
-			  <!-- Menú hamburguesa - Responsive-->
-			  <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-			  <!-- Listas barra de navegación -->
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-3">
-				  <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
-				  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">Categorías</a>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="../pages/categorias.html">Música</a></li>
-						<li><a class="dropdown-item" href="../pages/categorias.html">Teatro</a></li>
-						<li><a class="dropdown-item" href="../pages/categorias.html">Gastronomía</a></li>
+				<a class="navbar-brand" href="#"><img class="nav-logotipo" src="../assets/logo-travelarg.svg" alt="Logotipo Turismo"></a>
+				<!-- Menú hamburguesa - Responsive-->
+				<button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Listas barra de navegación -->
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-3">
+						<li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+						<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">Categorías</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="../pages/categorias.html">Música</a></li>
+								<li><a class="dropdown-item" href="../pages/categorias.html">Teatro</a></li>
+								<li><a class="dropdown-item" href="../pages/categorias.html">Gastronomía</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="../pages/experiencias.html">Experiencias</a></li>
+						<li class="nav-item"><a class="nav-link" href="../pages/novedades.html">Novedades</a></li>
+						<li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
 					</ul>
-				  </li>
-				  <li class="nav-item"><a class="nav-link" href="../pages/experiencias.html">Experiencias</a></li>
-				  <li class="nav-item"><a class="nav-link" href="../pages/novedades.html">Novedades</a></li>
-				  <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
-				  </li>
-				</ul>
-			  </div>
+				</div>
 			</div>
-		  </nav>
+		</nav>
 	</header>
 	<!-- INICIO MAIN - SECCIÓN NOVEDADES -->
-	<main>
+	<main id="novedades">
 		<!-- Banner principal -->
-		<div class="banner-principal">
+		<div class="banner-principal novedades">
 			<div class="container d-flex align-items-end h-100">
-				<div><h1>Novedades</h1></div>
+				<div class="col-sm-8 col-md-6">
+					<h1>Novedades</h1>
+					<p>Enterate de todas la noticias turísticas que suceden en Argentina. </p>
+				</div>
 			</div>
 		</div>
 		<!-- Sección ¡Mirá las experiencias que tenemos para ti! -->
 		<section class="container pt-5">
-			<div class="row">
-				<h2 class="mb-0">¡Enterate de lo que se viene! Próximos eventos</h2>
-				<!-- Card 1 -->
-				<div class="col-sm-12 col-md-6 mt-4">
-					<article class="card overflow-hidden banner-gradient">
-						<img class="card-img" src="../assets/open-house.jpg" alt="Open Houses Ba">
-						<div class="card-img-overlay text-light">
-							<h3 class="card-title">Open House Buenos Aires</h3>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-							<hr>
-							<p>Entrada libre con registro previo</p>
-							<a class="button-card btn btn-light px-3" href="#">¡Descubrir más!</a>
-							<a class="button-card favorito btn btn-light mx-2" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+			<div class=" row p-0">
+				<h2 class="mb-4">¡Enterate de lo que se viene!</h2>
+				<article class="col-sm-12 col-lg-8">
+					<!-- Noticia 1 -->
+					<div class="card mb-3" data-aos="zoom-in" data-aos-duration="1500">
+						<div class="row g-0">
+							<div class="col-4 card-img-container">
+								<img src="../assets/noticia-1-open-house.jpg" class="rounded-start" alt="Palacio Bencich, Buenos Aires">
+							</div>
+							<div class="col-8">
+								<div class="card-body">
+									<h5 class="card-title">Open House Buenos Aires: qué edificios de la Ciudad abrirán sus puertas este fin de semana</h5>
+									<p>25 de octubre de 2022</p>
+									<p class="card-text">Este 1 y 2 de octubre se realizará la 10º edición del "Open House Buenos Aires", el festival que celebra la arquitectura y el diseño urbanístico de la Ciudad de Buenos Aires.</p>
+									<a href="#">Leer el artículo completo 
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5 12H19" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M15 16L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M15 8L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
 						</div>
-					</article>
-				</div>
-				<!-- Card 2 -->
-				<div class="col-sm-12 col-md-6 mt-4">
-					<article class="card overflow-hidden banner-gradient">
-						<img class="card-img" src="../assets/noche-turismo.jpg" alt="Puerto Madero de Noche">
-						<div class="card-img-overlay text-light">
-							<h3 class="card-title">Noche del turismo 2da edición</h3>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-							<hr>
-							<p>Entrada libre con registro previo</p>
-							<a class="button-card btn btn-light px-3" href="#">¡Descubrir más!</a>
-							<a class="button-card favorito btn btn-light mx-2" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+					</div>
+					<!-- Noticia 2 -->
+					<div class="card mb-3" data-aos="zoom-in" data-aos-duration="1500">
+						<div class="row g-0">
+							<div class="col-4 card-img-container">
+								<img src="../assets/noticia-2-noche-turismo.jpg" class="rounded-start" alt="Buenos Aires de noche">
+							</div>
+							<div class="col-8">
+								<div class="card-body">
+									<h5 class="card-title">Se viene la 2ª Noche del Turismo</h5>
+									<p>25 de octubre de 2022</p>
+									<p class="card-text">Este sábado 8 de octubre, desde las 19 horas, la Ciudad ofrecerá a vecinos y turistas una variedad de circuitos temáticos, espectáculos en vivo, acceso a edificios emblemáticos, paseos en catamarán y viajes en el Bus Turístico. También habrá beneficios en locales gastronómicos y casas de tango.</p>
+									<a href="#">Leer el artículo completo 
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5 12H19" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M15 16L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M15 8L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
 						</div>
-					</article>
-				</div>
+					</div>
+					<!-- Noticia 3 -->
+					<div class="card mb-3" data-aos="zoom-in" data-aos-duration="2500">
+						<div class="row g-0">
+							<div class="col-4  card-img-container">
+								<img src="../assets/noticia-3-nomadas-digitales.jpg" class="rounded-start" alt="Nómada digital">
+							</div>
+							<div class="col-8">
+								<div class="card-body">
+									<h5 class="card-title">Lanzaron un plan de beneficios para atraer nómades digitales a la Argentina</h5>
+									<p>20 de octubre de 2022</p>
+									<p class="card-text">La medida apunta a visitantes que desempeñan tareas laborales de manera remota y que, según estimaciones, consumen más que otras personas que llegan al país.</p>
+									<a href="#">Leer el artículo completo 
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5 12H19" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M15 16L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M15 8L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Noticia 4 -->
+					<div class="card mb-3" data-aos="zoom-in" data-aos-duration="3000">
+						<div class="row g-0">
+							<div class="col-4 card-img-container">
+								<img src="../assets/noticia-4-turismo-cordoba.jpg" class="rounded-start" alt="Turismo en Córdoba, Argentina">
+							</div>
+							<div class="col-8">
+								<div class="card-body">
+									<h5 class="card-title">Jornada de capacitación para operadores turísticos de Córdoba</h5>
+									<p>15 de octubre de 2022</p>
+									<p class="card-text">El Ente de Turismo de la Ciudad de Buenos Aires, la Provincia de Córdoba y la Dirección de Turismo de la Ciudad de Córdoba organizarán este jueves un encuentro virtual gratuito para agencias de viajes y tour operadores de la provincia de Córdoba.</p>
+									<a href="#">Leer el artículo completo 
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5 12H19" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M15 16L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M15 8L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="col-sm-4 novedades-lateral">
+					<aside>
+						<a href="#">
+							<img class="img-fluid" src="../assets/banner-publicitario-travelarg-vertical.jpg" alt="Publicidad Travelarg">
+						</a>
+					</aside>
+					<h2 class="mt-4">Otras novedades</h2>
+					<!-- Noticia 1 -->
+					<div class="card mb-3 border-0">
+						<div class="row g-0 ">
+							<div class="col-md-6 card-img-container small">
+								<img src="../assets/otra-noticia-1-invierno-arg.jpg" class="rounded" alt="Invierno en Argentina">
+							</div>
+							<div class="col-md-6">
+								<div class="card-body p-0 ps-3">
+									<h5 class="card-title">Un millón de turistas visitó Argentina.</h5>
+									<a href="#">Leer más 
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5 12H19" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M15 16L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M15 8L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Noticia 2 -->
+					<div class="card mb-3 border-0">
+						<div class="row g-0">
+							<div class="col-md-6 card-img-container small">
+								<img src="../assets/otra-noticia-2-feria-fit.jpg" class="rounded" alt="Conferencia Feria FIT">
+							</div>
+							<div class="col-md-6">
+								<div class="card-body p-0 ps-3">
+									<h5 class="card-title">Llega la Feria de Turismo FIT 2022 a La Rural.</h5>
+									<a href="#">Leer más 
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5 12H19" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M15 16L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M15 8L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Noticia 3 -->
+					<div class="card mb-3 border-0">
+						<div class="row g-0">
+							<div class="col-md-6 card-img-container small">
+								<img src="../assets/otra-noticia-3-dia-turismo.jpg" class="rounded" alt="Turistas en la montaña">
+							</div>
+							<div class="col-md-6">
+								<div class="card-body p-0 ps-3">
+									<h5 class="card-title">Efemérides, ¿Qué pasó hoy 27 de septiembre?</h5>
+									<a href="#">Leer más 
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5 12H19" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M15 16L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M15 8L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Noticia 4 -->
+					<div class="card mb-3 border-0">
+						<div class="row g-0">
+							<div class="col-md-6 card-img-container small">
+								<img src="../assets/otra-noticia-4-pre-viaje.jpg" class="rounded" alt="Imagen de Pre-viaje">
+							</div>
+							<div class="col-md-6">
+								<div class="card-body p-0 ps-3">
+									<h5 class="card-title">Según la CAT, el Previaje 3 superó las expectativas.</h5>
+									<a href="#">Leer más 
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5 12H19" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M15 16L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M15 8L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
 			</div>
-		</section>
+		</section>		
 		<!-- Sección noticias destacadas -->
 		<section class="container pb-5 mt-5">
 			<div class="row">
 				<h2 class="mb-0">Noticias destacadas</h2>
 				<!-- Noticia 1 -->
-				<div class="col-sm-12 col-md-6 mt-4">
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4" data-aos="zoom-in" data-aos-duration="1500">
 					<article class="card">
-						<img class="card-img-top" src="../assets/nomada-digital.jpg" alt="imagen de evento">
-						<div class="card-body">
-							<h3 class="card-title">La Ciudad se prepara para atraer nómades digitales</h3>
-							<h4>29 de agosto 2022</h4>
-							<p>Ruta de los pueblos precolombinos, paisaje cultural del mundo.</p>
-							<a class="btn btn-outline-secondary px-3" href="#">¡Descubrir más!</a>
+						<img class="card-img" src="../assets/noticia-destacatas-1-unidades-turisticas.jpg" alt="Unidades turisticas">
+						<div class="card-img-overlay">
+							<h3 class="card-title">Temporada 2023 en las Unidades Turísticas.</h3>
+							<a href="#">Leer más 
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5 12H19" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M15 16L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M15 8L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a>
 						</div>
 					</article>
 				</div>
 				<!-- Noticia 2 -->
-				<div class="col-sm-12 col-md-6 mt-4">
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4" data-aos="zoom-in" data-aos-duration="2000">
 					<article class="card">
-						<img class="card-img-top" src="../assets/turismo-cordoba.jpg" alt="imagen de evento">
-						<div class="card-body">
-							<h3 class="card-title">Capacitación para operadores turísticos de Córdoba</h3>
-							<h4>29 de agosto 2022</h4>
-							<p>Ruta de los pueblos precolombinos, paisaje cultural del mundo.</p>
-							<a class="btn btn-outline-secondary px-3" href="#">¡Descubrir más!</a>
-						</div>
-					</article>
-				</div>
-			</div>
-		</section>
-		<!-- Sección noticias recientes -->
-		<section class="container pb-5">
-			<div class="row">
-				<h2 class="mb-0">Noticias destacadas</h2>
-				<!-- Noticia 1 -->
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
-					<article class="card">
-						<img class="card-img-top" src="../assets/noticia-invierno.jpg" alt="Invierno Argentina">
-						<div class="card-body">
-							<h3 class="card-title">Un millón de turistas extranjeros visitó Argentina durante el invierno.</h3>
-							<h4>29 de agosto 2022</h4>
-							<p>Ruta de los pueblos precolombinos, paisaje cultural del mundo.</p>
-							<a class="btn btn-outline-secondary px-3" href="#">¡Descubrir más!</a>
-						</div>
-					</article>
-				</div>
-				<!-- Noticia 2 -->
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
-					<article class="card">
-						<img class="card-img-top" src="../assets/feria-fit.jpg" alt="Congreso Feria FIT 2022">
-						<div class="card-body">
-							<h3 class="card-title">Llega la Feria de Turismo FIT 2022 a La Rural: qué hay para ver, horarios y precios.</h3>
-							<h4>29 de agosto 2022</h4>
-							<p>Ruta de los pueblos precolombinos, paisaje cultural del mundo.</p>
-							<a class="btn btn-outline-secondary px-3" href="#">¡Descubrir más!</a>
+						<img class="card-img" src="../assets/noticia-destacatas-2-fadu.jpg" alt="Imagen FADU">
+						<div class="card-img-overlay">
+							<h3 class="card-title">Turismo y Urbanismo dará a conocer sus carreras.</h3>
+							<a href="#">Leer más 
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5 12H19" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M15 16L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M15 8L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a>
 						</div>
 					</article>
 				</div>
 				<!-- Noticia 3 -->
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4 d-md-none d-lg-block" data-aos="zoom-in" data-aos-duration="2500">
 					<article class="card">
-						<img class="card-img-top" src="../assets/dia-turismo.jpg" alt="Turistas">
-						<div class="card-body">
-							<h3 class="card-title">Efemérides, ¿Qué pasó hoy 27 de septiembre? Es el Día Mundial del Turismo.</h3>
-							<h4>29 de agosto 2022</h4>
-							<p>Ruta de los pueblos precolombinos, paisaje cultural del mundo.</p>
-							<a class="btn btn-outline-secondary px-3" href="#">¡Descubrir más!</a>
-						</div>
-					</article>
-				</div>
-				<!-- Noticia 4 -->
-				<div class="col-sm-12 col-md-6 col-lg-3 d-lg-none d-xl-block mt-4">
-					<article class="card">
-						<img class="card-img-top" src="../assets/pre-viaje.jpg" alt="Pre viaje">
-						<div class="card-body">
-							<h3 class="card-title">Según la Cámara Argentina de Turismo, el Previaje 3 superó las expectativas.</h3>
-							<h4>29 de agosto 2022</h4>
-							<p>Ruta de los pueblos precolombinos, paisaje cultural del mundo.</p>
-							<a class="btn btn-outline-secondary px-3" href="#">¡Descubrir más!</a>
+						<img class="card-img" src="../assets/noticia-destacatas-3-ciclismo.jpg" alt="Imagen FADU">
+						<div class="card-img-overlay">
+							<h3 class="card-title">Nueva propuesta formativa: Introducción al cicloturismo.</h3>
+							<a href="#">Leer más 
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5 12H19" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M15 16L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M15 8L19 12" stroke="#F72585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a>
 						</div>
 					</article>
 				</div>
@@ -187,10 +309,8 @@
 						<div>
 							<label class="mt-4 pb-2" for="idioma">Idioma</label>
 							<select class="form-select" name="idioma" id="idioma">
-								<option hidden selected>Seleccionar idioma</option>
+								<option hidden selected>Cambiar idioma</option>
 								<option value="recoleta">Inglés</option>
-								<option value="belgrano">Portugués</option>
-								<option value="tigre">Chino</option>
 							</select>
 						</div>
 					</form>
@@ -200,11 +320,11 @@
 					<article>
 						<h2>Nuestras redes</h2>
 						<ul class="list-unstyled lh-lg">
-							<li><a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-							<li><a class="nav-link" href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-							<li><a class="nav-link" href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
-							<li><a class="nav-link" href="#"><i class="fa-brands fa-square-youtube"></i> Youtube</a></li>
-							<li><a class="nav-link" href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-instagram me-1"></i> Instagram</a></li>
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-twitter me-1"></i> Twitter</a></li>
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-facebook me-1"></i> Facebook</a></li>
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-square-youtube me-1"></i> Youtube</a></li>
+							<li><a class="nav-link" href="#"><i class="fa-brands fa-linkedin me-1"></i> LinkedIn</a></li>
 						</ul>
 					</article>
 					<article>
@@ -230,7 +350,7 @@
 				</section>
 			</div>
 		</section>
-		<p class="text-light text-center m-0 p-2">© 2022 nombre de la página. TODOS LOS DERECHOS RESERVADOS.</p>
+		<p class="text-light text-center m-0 p-2">© 2022 Travelarg. TODOS LOS DERECHOS RESERVADOS.</p>
 	</footer>
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
