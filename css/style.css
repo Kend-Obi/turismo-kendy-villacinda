@@ -345,6 +345,18 @@ header.video-bg-container .video-bg {
     display: none;
   }
 }
+@media only screen and (max-width: 575px) {
+  #novedades .card .row .card-img-container {
+    max-height: 280px;
+    overflow-x: hidden;
+  }
+  #novedades .card .row .card-img-container img {
+    margin-top: -20%;
+    max-height: none;
+    width: 100%;
+    height: initial;
+  }
+}
 @media only screen and (max-width: 467px) {
   .nav-eventos {
     font-size: 12px;
